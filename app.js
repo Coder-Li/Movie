@@ -6,6 +6,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+var Movie = require('./models/movie');
+var _= require('underscore');
 
 // var routes = require('./routes/index');
 // var users = require('./routes/users');
@@ -54,49 +56,25 @@ console.log('server started on port ' + port);
 // });
 
 app.get('/', function(req, res){
-  res.render('index', {
-    title: '首页',
-    movies: [{
-      title: '机械战警',
-      _id: 1,
-      poster: 'http://r3.ykimg.com/05160000530EEB63675839160D0B79D5'
-    },{
-      title: '机械战警',
-      _id: 2,
-      poster: 'http://r3.ykimg.com/05160000530EEB63675839160D0B79D5'
-    },{
-      title: '机械战警',
-      _id: 3,
-      poster: 'http://r3.ykimg.com/05160000530EEB63675839160D0B79D5'
-    },{
-      title: '机械战警',
-      _id: 4,
-      poster: 'http://r3.ykimg.com/05160000530EEB63675839160D0B79D5'
-    },{
-      title: '机械战警',
-      _id: 5,
-      poster: 'http://r3.ykimg.com/05160000530EEB63675839160D0B79D5'
-    },{
-      title: '机械战警',
-      _id: 6,
-      poster: 'http://r3.ykimg.com/05160000530EEB63675839160D0B79D5'
-    }]
-  });
+  Movie.fetch(function(err, movies){
+    if(err){
+      console.log(err);
+    }
+    res.render('index', {
+      title: '首页',
+      movies: movies
+    }); 
+  });  
 });
 // detail page
 app.get('/movie/:id', function(req, res){
-  res.render('detail', {
-    title: '详情',
-    movie: {
-      doctor: '何塞·帕蒂利亚',
-      country: '美国',
-      title: '机械战警',
-      year: 2014,
-      poster: 'http://r3.ykimg.com/05160000530EEB63675839160D0B79D5',
-      language: '英语',
-      flash: 'http://player.youku.com/player.php/sid/XNjA1Njc0NTUy/v.swf',
-      summary: '简介就随便写点吧'
-    }
+  var id = req.params.id;
+  
+  Movie.findById(id, function(err, movie){
+    res.render('detail', {
+      title: '详情' + movie.title,
+      movie: movie
+    });
   });
 });
 // admin page
@@ -115,21 +93,79 @@ app.get('/admin/movie', function(req, res){
     }
   });
 });
+// admin update movie
+app.get('/admin/update/:id', function(req, res){
+  var id = req.params.id;
+  
+  if(id){
+    Movie.findById(id, function(err, movie){
+      res.render('admin',{
+        title: '后台更新页',
+        movie: movie
+      });
+    });
+  }
+});
+
+// admin post movie
+app.post('/admin/movie/new', function(res, req){
+  console.log(req.body);
+  console.log('-------------------------------');
+  console.log(req.body.movie)
+  var id = req.body.movie._id;
+  var movieObj = req.body.movie;
+  var _movie;
+  
+  if(id !== 'undefined'){
+    Movie.findById(id, function(err, movie){
+      if(err){
+        console.log(err);
+      }
+      
+      _movie = _.extend(movie, movieObj);
+      _movie.save(function(err, movie){
+        if(err){
+          console.log(err);
+        }
+        
+        res.redirect('/movie/' + movie._id);
+      });
+    });
+  }
+  else{
+    _movie = new Movie({
+      doctor: movieObj.doctor,
+      title: movieObj.title,
+      country: movieObj.country,
+      language: movieObj.language,
+      year: movieObj.year,
+      poster: movieObj.poster,
+      summary: movieObj.summary,
+      flash: movieObj.flash
+    });
+    
+    _movie.save(function(err, movie){
+      if(err){
+          console.log(err);
+        }
+        
+        res.redirect('/movie/' + movie._id);
+    });
+  }
+});
+
 // list page
 app.get('/admin/list', function(req, res){
-  res.render('list', {
-    title: '列表',
-    movies: [{
-      title: '机械战警',
-      _id: 1,
-      doctor: 'ABCDEFG',
-      country: '美国',
-      year: 2014,
-      language: '英语',
-      flash: 'http://player.youku.com/player.php/sid/XNjA1Njc0NTUy/v.swf',
-      summary: '简介就随便写点吧'
-    }]
-  });
+  Movie.fetch(function(err, movies){
+    if(err){
+      console.log(err);
+    }
+    
+    res.render('list', {
+      title: '列表页',
+      movies: movies
+    }); 
+  });  
 });
 
 // // app.use('/', routes);
