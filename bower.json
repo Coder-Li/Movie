@@ -1,0 +1,22 @@
+{
+  "name": "Movie",
+  "description": "simple movie system",
+  "main": "app.js",
+  "authors": [
+    "Coder-Li"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "movie"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ]
+}
