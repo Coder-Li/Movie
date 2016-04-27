@@ -23,7 +23,8 @@ app.set('view engine', 'jade');
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+// 改为 true
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.listen(port);
@@ -108,11 +109,17 @@ app.get('/admin/update/:id', function(req, res){
 });
 
 // admin post movie
-app.post('/admin/movie/new', function(res, req){
+app.post('/admin/movie/new', function(req, res){
   console.log(req.body);
-  console.log('-------------------------------');
-  console.log(req.body.movie)
-  var id = req.body.movie._id;
+  console.log(typeof req.body.movie);
+  console.log('title:' + req.body.movie.title);
+  var id;
+  var flag = typeof req.body.movie._id;
+  if(flag === 'undefined'){
+    console.log('新增数据。')
+  }else{
+    id = req.body.movie._id;
+  }
   var movieObj = req.body.movie;
   var _movie;
   
