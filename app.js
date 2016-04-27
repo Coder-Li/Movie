@@ -27,6 +27,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.locals.moment = require('moment');
 app.listen(port);
 
 console.log('server started on port ' + port);
@@ -110,9 +111,9 @@ app.get('/admin/update/:id', function(req, res){
 
 // admin post movie
 app.post('/admin/movie/new', function(req, res){
-  console.log(req.body);
-  console.log(typeof req.body.movie);
-  console.log('title:' + req.body.movie.title);
+  // console.log(req.body);
+  // console.log(typeof req.body.movie);
+  // console.log('title:' + req.body.movie.title);
   var id;
   var flag = typeof req.body.movie._id;
   if(flag === 'undefined'){
@@ -173,6 +174,24 @@ app.get('/admin/list', function(req, res){
       movies: movies
     }); 
   });  
+});
+
+// list delete movie
+app.delete('/admin/list', function(req, res){
+  // console.log('run');
+  var id = req.query.id;
+  // console.log('id:' + id);
+  if(id){
+    Movie.remove({_id: id}, function(err, movie){
+      if(err){
+        // console.log('remove :' + typeof Movie.remove);
+        console.log(err);
+      }else{
+        // console.log('success!');
+        res.json({success: 1});
+      }
+    });
+  }
 });
 
 // // app.use('/', routes);

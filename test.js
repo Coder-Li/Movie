@@ -18,7 +18,7 @@ console.log(a);
 console.log(b);
 console.log(typeof a);
 console.log(typeof b);
-var flag = typeof b;
+var flag = typeof c;
 console.log('flag:' + flag);
 if(flag === 'undefined'){
     console.log('undefined');
