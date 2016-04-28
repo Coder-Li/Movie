@@ -11,7 +11,7 @@ var _= require('underscore');
 
 // var routes = require('./routes/index');
 // var users = require('./routes/users');
-mongoose.connect('mongodb://localhost/imooc');
+mongoose.connect('mongodb://127.0.0.1/imooc');
 
 var app = express();
 

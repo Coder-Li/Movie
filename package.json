@@ -16,7 +16,13 @@
   },
   "description": "simple movie system",
   "main": "app.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-concurrent": "^2.3.0",
+    "grunt-contrib-nodemon": "^0.5.2",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-nodemon": "^0.4.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Coder-Li/Movie.git"
