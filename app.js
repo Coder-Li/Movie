@@ -7,11 +7,16 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var Movie = require('./models/movie');
+var User = require('./models/user');
 var _= require('underscore');
+var session = require('express-session');
+var mongoStore = require('connect-mongo')(session);
 
+//数据库URL
+var dbUrl = 'mongodb://127.0.0.1/imooc';
 // var routes = require('./routes/index');
 // var users = require('./routes/users');
-mongoose.connect('mongodb://127.0.0.1/imooc');
+mongoose.connect(dbUrl);
 
 var app = express();
 
@@ -26,38 +31,36 @@ app.use(bodyParser.json());
 // 改为 true
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
+app.use(session({
+  secret : 'test',
+  resave: false,
+  saveUninitialized: true,
+  store: new mongoStore({
+    url: dbUrl,
+    collection: 'sessions'
+  })
+}));
 app.use(express.static(path.join(__dirname, 'public')));
 app.locals.moment = require('moment');
 app.listen(port);
 
 console.log('server started on port ' + port);
-// 定义路由
-// index page
-// app.get('/', function(req, res){
-//   res.render('index', {
-//     title: '首页'
-//   });
-// });
-// // detail page
-// app.get('/movie/:id', function(req, res){
-//   res.render('detail', {
-//     title: '详情'
-//   });
-// });
-// // admin page
-// app.get('/admin/movie', function(req, res){
-//   res.render('admin', {
-//     title: '录入'
-//   });
-// });
-// // list page
-// app.get('/admin/list', function(req, res){
-//   res.render('list', {
-//     title: '列表'
-//   });
-// });
 
+// 定义路由
+// pre handle user
+app.use(function(req, res, next){
+  var _user = req.session.user;
+  if(_user){
+    app.locals.user = _user;
+  }
+    return next();
+});
+
+// index page
 app.get('/', function(req, res){
+  console.log('user:');
+  console.log(req.session.user);
+  
   Movie.fetch(function(err, movies){
     if(err){
       console.log(err);
@@ -194,40 +197,84 @@ app.delete('/admin/list', function(req, res){
   }
 });
 
-// // app.use('/', routes);
-// // app.use('/users', users);
+// signup
+app.post('/user/signup', function(req,res){
+  var _user = req.body.user;
+  var user = new User(_user);
+  // req.param('user');    // not params     url>body>query
+  // console.log(_user);
+  //用户名校验
+  User.find({name: _user.name}, function(err, user){
+    if(err){
+      console.log(err);
+    }
+    if(user){
+      return res.redirect('/');
+    }else{
+      
+      //密码校验代码
+      
+      //
+      user.save(function(err, user){
+        if(err){
+          console.log(err);
+        }
+        
+        res.redirect('/admin/userlist');
+      });
+    }
+  })
+});
+
+// userlist page
+app.get('/admin/userlist', function(req, res){
+  User.fetch(function(err, users){
+    if(err){
+      console.log(err);
+    }
+    
+    res.render('userlist', {
+      title: '用户列表页',
+      users: users
+    });  
+  });  
+});
+
+//signin page
+app.post('/user/signin', function(req, res){
+  var _user = req.body.user;
+  var name = _user.name;
+  var password = _user.password;
+  
+  User.findOne({name: name}, function(err, user){
+    if(err){
+      console.log(err);
+    }
+    if(!user){
+      return res.redirect('/');
+    }
+    
+    user.comparePassword(password, function(err, isMatch){
+      if(err){
+        console.log(err);
+      }
+      
+      if(isMatch){
+        req.session.user = user;        
+        return res.redirect('/');
+      }else{
+        // return res.redirect
+        console.log('Password is not matched');
+      }
+    });
+  });
+});
 
 
-// // catch 404 and forward to error handler
-// app.use(function(req, res, next) {
-//   var err = new Error('Not Found');
-//   err.status = 404;
-//   next(err);
-// });
-
-// // error handlers
-
-// // development error handler
-// // will print stacktrace
-// if (app.get('env') === 'development') {
-//   app.use(function(err, req, res, next) {
-//     res.status(err.status || 500);
-//     res.render('error', {
-//       message: err.message,
-//       error: err
-//     });
-//   });
-// }
-
-// // production error handler
-// // no stacktraces leaked to user
-// app.use(function(err, req, res, next) {
-//   res.status(err.status || 500);
-//   res.render('error', {
-//     message: err.message,
-//     error: {}
-//   });
-// });
-
-
-// module.exports = app;
+//logout 
+app.get('/logout', function(req, res){
+  delete req.session.user;
+  delete app.locals.user;
+  
+  res.redirect('/');
+})
