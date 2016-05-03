@@ -1,9 +1,15 @@
 var User = require('../models/user');
 
 // signup
+exports.showSignup = function (req, res) {
+    res.render('signup', {
+        title: '注册页面'
+    });
+};
+
 exports.signup = function (req, res) {
     var _user = req.body.user;
-    var user = new User(_user);
+    // var user = new User(_user);
     // req.param('user');    // not params     url>body>query
     // console.log(_user);
     //用户名校验
@@ -12,7 +18,7 @@ exports.signup = function (req, res) {
             console.log(err);
         }
         if (user) {
-            return res.redirect('/');
+            return res.redirect('/signin');
         } else {
 
             //密码校验代码
@@ -23,13 +29,19 @@ exports.signup = function (req, res) {
                     console.log(err);
                 }
 
-                res.redirect('/admin/userlist');
+                res.redirect('/');
             });
         }
     })
 };
 
 //signin page
+exports.showSignin = function (req, res) {
+    res.render('signin', {
+        title: '登录页面'
+    });
+};
+
 exports.signin = function (req, res) {
     var _user = req.body.user;
     var name = _user.name;
@@ -40,7 +52,7 @@ exports.signin = function (req, res) {
             console.log(err);
         }
         if (!user) {
-            return res.redirect('/');
+            return res.redirect('/signup');
         }
 
         user.comparePassword(password, function (err, isMatch) {
@@ -54,11 +66,11 @@ exports.signin = function (req, res) {
             } else {
                 // return res.redirect
                 console.log('Password is not matched');
+                return res.redirect('/signin');
             }
         });
     });
 };
-
 
 //logout 
 exports.logout = function (req, res) {
@@ -81,3 +93,25 @@ exports.list = function (req, res) {
         });
     });
 };
+
+//midware for userlist
+//判断是否登录
+exports.signinRequired = function(req, res, next){
+    var user = req.session.user;
+    
+    if(!user){
+        return res.redirect('/signin');
+    }
+    
+    next();
+}
+//判断权限
+exports.adminRequired = function(req,res,next){
+    // var user = req.session.user;
+    
+    // if(user.role <= 10){
+    //     return res.redirect('/signin');
+    // }
+    
+    next();
+}
