@@ -1,6 +1,7 @@
 var Index = require('../app/controllers//index');
 var User = require('../app/controllers//user');
 var Movie = require('../app/controllers/movie');
+var Comment = require('../app/controllers/comment');
 var _ = require('underscore');
 
 module.exports = function (app) {
@@ -30,4 +31,7 @@ module.exports = function (app) {
     app.get('/logout', User.logout);
     app.get('/signin', User.showSignin);
     app.get('/signup', User.showSignup);
+
+    //Comment
+    app.post('/user/comment', User.signinRequired, Comment.save);
 } 
