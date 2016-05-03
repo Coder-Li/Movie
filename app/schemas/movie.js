@@ -1,7 +1,9 @@
 //模式定义
 var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
+var ObjectId = Schema.Types.ObjectId;
 // 这里面放跟电影有过的字段和类型
-var MovieSchema = new mongoose.Schema({
+var MovieSchema = new Schema({
     doctor: String,
     title: String,
     language: String,
@@ -10,6 +12,10 @@ var MovieSchema = new mongoose.Schema({
     flash: String,
     poster: String,
     year: Number,
+    catetory: {
+        type: ObjectId,
+        ref: 'catetory'
+    },
     meta: {
         createAt: {
             type: Date,

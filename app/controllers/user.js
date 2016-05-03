@@ -13,7 +13,7 @@ exports.signup = function (req, res) {
     // req.param('user');    // not params     url>body>query
     // console.log(_user);
     //用户名校验
-    User.find({ name: _user.name }, function (err, user) {
+    User.findOne({ name: _user.name }, function (err, user) {
         if (err) {
             console.log(err);
         }

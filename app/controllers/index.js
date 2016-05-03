@@ -1,16 +1,20 @@
 var Movie = require('../models/movie');
+var Catetory = require('../models/category');
 // index page
 exports.index = function (req, res) {
-    console.log('user:');
-    console.log(req.session.user);
+    Catetory
+        .find({})
+        .populate({ path: 'movies', options: { limit: 5 } })
+        .exec(function (err, catetories) {
 
-    Movie.fetch(function (err, movies) {
-        if (err) {
-            console.log(err);
-        }
-        res.render('index', {
-            title: '首页',
-            movies: movies
+            if (err) {
+                console.log(err);
+            }
+            
+            res.render('index', {
+                title: '首页',
+                catetories: catetories
+            });
         });
-    });
+
 }
