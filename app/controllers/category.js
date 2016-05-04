@@ -9,6 +9,7 @@ exports.new = function (req, res) {
     });
 };
 
+//save category
 exports.save = function(req, res){
   var _category = req.body.category;
   var category = new Category(_category);

@@ -1,11 +1,11 @@
 var Movie = require('../models/movie');
-var Catetory = require('../models/category');
+var Category = require('../models/category');
 // index page
 exports.index = function (req, res) {
-    Catetory
+    Category
         .find({})
         .populate({ path: 'movies', options: { limit: 5 } })
-        .exec(function (err, catetories) {
+        .exec(function (err, categories) {
 
             if (err) {
                 console.log(err);
@@ -13,7 +13,7 @@ exports.index = function (req, res) {
             
             res.render('index', {
                 title: '首页',
-                catetories: catetories
+                categories: categories
             });
         });
 
