@@ -1,0 +1,1792 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'E:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'E:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'connect-multiparty',
+1 verbose cli   '--save' ]
+2 info using npm@2.14.12
+3 info using node@v4.2.4
+4 verbose install initial load of f:\Movie\package.json
+5 verbose installManyTop reading scoped package data from f:\Movie\node_modules\body-parser\package.json
+6 verbose installManyTop reading scoped package data from f:\Movie\node_modules\character-parser\package.json
+7 verbose installManyTop reading scoped package data from f:\Movie\node_modules\connect-mongo\package.json
+8 verbose installManyTop reading scoped package data from f:\Movie\node_modules\cookie-parser\package.json
+9 verbose installManyTop reading scoped package data from f:\Movie\node_modules\debug\package.json
+10 verbose installManyTop reading scoped package data from f:\Movie\node_modules\express\package.json
+11 verbose installManyTop reading scoped package data from f:\Movie\node_modules\express-session\package.json
+12 verbose installManyTop reading scoped package data from f:\Movie\node_modules\grunt\package.json
+13 verbose installManyTop reading scoped package data from f:\Movie\node_modules\grunt-concurrent\package.json
+14 verbose installManyTop reading scoped package data from f:\Movie\node_modules\grunt-contrib-nodemon\package.json
+15 verbose installManyTop reading scoped package data from f:\Movie\node_modules\grunt-contrib-watch\package.json
+16 verbose installManyTop reading scoped package data from f:\Movie\node_modules\grunt-nodemon\package.json
+17 verbose installManyTop reading scoped package data from f:\Movie\node_modules\jade\package.json
+18 verbose installManyTop reading scoped package data from f:\Movie\node_modules\moment\package.json
+19 verbose installManyTop reading scoped package data from f:\Movie\node_modules\mongodb\package.json
+20 verbose installManyTop reading scoped package data from f:\Movie\node_modules\mongoose\package.json
+21 verbose installManyTop reading scoped package data from f:\Movie\node_modules\morgan\package.json
+22 verbose installManyTop reading scoped package data from f:\Movie\node_modules\serve-favicon\package.json
+23 verbose installManyTop reading scoped package data from f:\Movie\node_modules\underscore\package.json
+24 info package.json grunt@0.4.5 No license field.
+25 verbose readDependencies loading dependencies from f:\Movie\package.json
+26 silly cache add args [ 'connect-multiparty', null ]
+27 verbose cache add spec connect-multiparty
+28 silly cache add parsed spec Result {
+28 silly cache add   raw: 'connect-multiparty',
+28 silly cache add   scope: null,
+28 silly cache add   name: 'connect-multiparty',
+28 silly cache add   rawSpec: '',
+28 silly cache add   spec: 'latest',
+28 silly cache add   type: 'tag' }
+29 silly addNamed connect-multiparty@latest
+30 verbose addNamed "latest" is being treated as a dist-tag for connect-multiparty
+31 info addNameTag [ 'connect-multiparty', 'latest' ]
+32 silly mapToRegistry name connect-multiparty
+33 silly mapToRegistry using default registry
+34 silly mapToRegistry registry https://registry.npmjs.org/
+35 silly mapToRegistry uri https://registry.npmjs.org/connect-multiparty
+36 verbose addNameTag registry:https://registry.npmjs.org/connect-multiparty not in flight; fetching
+37 verbose request uri https://registry.npmjs.org/connect-multiparty
+38 verbose request no auth needed
+39 info attempt registry request try #1 at 11:07:54
+40 verbose request id 653c91eb1a82f4c1
+41 http request GET https://registry.npmjs.org/connect-multiparty
+42 http 200 https://registry.npmjs.org/connect-multiparty
+43 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+43 verbose headers   etag: '"DLWCP3D7129JZCJUTMPP42K9L"',
+43 verbose headers   'content-type': 'application/json',
+43 verbose headers   'cache-control': 'max-age=300',
+43 verbose headers   'content-length': '21295',
+43 verbose headers   'accept-ranges': 'bytes',
+43 verbose headers   date: 'Fri, 06 May 2016 03:07:58 GMT',
+43 verbose headers   via: '1.1 varnish',
+43 verbose headers   age: '0',
+43 verbose headers   connection: 'keep-alive',
+43 verbose headers   'x-served-by': 'cache-ams4143-AMS',
+43 verbose headers   'x-cache': 'HIT',
+43 verbose headers   'x-cache-hits': '1',
+43 verbose headers   'x-timer': 'S1462504077.927880,VS0,VE382',
+43 verbose headers   vary: 'Accept-Encoding' }
+44 silly get cb [ 200,
+44 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+44 silly get     etag: '"DLWCP3D7129JZCJUTMPP42K9L"',
+44 silly get     'content-type': 'application/json',
+44 silly get     'cache-control': 'max-age=300',
+44 silly get     'content-length': '21295',
+44 silly get     'accept-ranges': 'bytes',
+44 silly get     date: 'Fri, 06 May 2016 03:07:58 GMT',
+44 silly get     via: '1.1 varnish',
+44 silly get     age: '0',
+44 silly get     connection: 'keep-alive',
+44 silly get     'x-served-by': 'cache-ams4143-AMS',
+44 silly get     'x-cache': 'HIT',
+44 silly get     'x-cache-hits': '1',
+44 silly get     'x-timer': 'S1462504077.927880,VS0,VE382',
+44 silly get     vary: 'Accept-Encoding' } ]
+45 verbose get saving connect-multiparty to C:\Users\Magic-Y\AppData\Roaming\npm-cache\registry.npmjs.org\connect-multiparty\.cache.json
+46 silly addNameTag next cb for connect-multiparty with tag latest
+47 silly addNamed connect-multiparty@2.0.0
+48 verbose addNamed "2.0.0" is a plain semver version for connect-multiparty
+49 silly mapToRegistry name connect-multiparty
+50 silly mapToRegistry using default registry
+51 silly mapToRegistry registry https://registry.npmjs.org/
+52 silly mapToRegistry uri https://registry.npmjs.org/connect-multiparty
+53 verbose addRemoteTarball https://registry.npmjs.org/connect-multiparty/-/connect-multiparty-2.0.0.tgz not in flight; adding
+54 verbose addRemoteTarball [ 'https://registry.npmjs.org/connect-multiparty/-/connect-multiparty-2.0.0.tgz',
+54 verbose addRemoteTarball   '57a7b61cc7b31b6eef4a62878d60d771b23699ab' ]
+55 info retry fetch attempt 1 at 11:07:56
+56 info attempt registry request try #1 at 11:07:56
+57 http fetch GET https://registry.npmjs.org/connect-multiparty/-/connect-multiparty-2.0.0.tgz
+58 http fetch 200 https://registry.npmjs.org/connect-multiparty/-/connect-multiparty-2.0.0.tgz
+59 silly fetchAndShaCheck shasum 57a7b61cc7b31b6eef4a62878d60d771b23699ab
+60 verbose addTmpTarball C:\Users\Magic-Y\AppData\Local\Temp\npm-6744-a53c2253\registry.npmjs.org\connect-multiparty\-\connect-multiparty-2.0.0.tgz not in flight; adding
+61 verbose addTmpTarball already have metadata; skipping unpack for connect-multiparty@2.0.0
+62 silly cache afterAdd connect-multiparty@2.0.0
+63 verbose afterAdd C:\Users\Magic-Y\AppData\Roaming\npm-cache\connect-multiparty\2.0.0\package\package.json not in flight; writing
+64 verbose afterAdd C:\Users\Magic-Y\AppData\Roaming\npm-cache\connect-multiparty\2.0.0\package\package.json written
+65 silly install resolved [ { name: 'connect-multiparty',
+65 silly install resolved     version: '2.0.0',
+65 silly install resolved     description: 'multipart parsing middleware for connect using multiparty',
+65 silly install resolved     main: 'index.js',
+65 silly install resolved     repository:
+65 silly install resolved      { type: 'git',
+65 silly install resolved        url: 'git://github.com/andrewrk/connect-multiparty.git' },
+65 silly install resolved     author: { name: 'Andrew Kelley', email: 'superjoe30@gmail.com' },
+65 silly install resolved     license: 'MIT',
+65 silly install resolved     dependencies:
+65 silly install resolved      { multiparty: '~4.1.2',
+65 silly install resolved        'on-finished': '~2.3.0',
+65 silly install resolved        qs: '~4.0.0',
+65 silly install resolved        'type-is': '~1.6.4' },
+65 silly install resolved     scripts: { test: 'mocha --reporter spec test/*.js' },
+65 silly install resolved     engines: { node: '>=0.10.0' },
+65 silly install resolved     devDependencies:
+65 silly install resolved      { connect: '3',
+65 silly install resolved        mocha: '~2.2.5',
+65 silly install resolved        should: '~7.0.2',
+65 silly install resolved        supertest: '~1.0.1' },
+65 silly install resolved     bugs: { url: 'https://github.com/andrewrk/connect-multiparty/issues' },
+65 silly install resolved     gitHead: '5caa5dfe66701b0ea2f92d6db0199e2a52791fee',
+65 silly install resolved     homepage: 'https://github.com/andrewrk/connect-multiparty',
+65 silly install resolved     _id: 'connect-multiparty@2.0.0',
+65 silly install resolved     _shasum: '57a7b61cc7b31b6eef4a62878d60d771b23699ab',
+65 silly install resolved     _from: 'connect-multiparty@latest',
+65 silly install resolved     _npmVersion: '1.4.28',
+65 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+65 silly install resolved     maintainers: [ [Object], [Object] ],
+65 silly install resolved     dist:
+65 silly install resolved      { shasum: '57a7b61cc7b31b6eef4a62878d60d771b23699ab',
+65 silly install resolved        tarball: 'https://registry.npmjs.org/connect-multiparty/-/connect-multiparty-2.0.0.tgz' },
+65 silly install resolved     directories: {},
+65 silly install resolved     _resolved: 'https://registry.npmjs.org/connect-multiparty/-/connect-multiparty-2.0.0.tgz' } ]
+66 info install connect-multiparty@2.0.0 into f:\Movie
+67 info installOne connect-multiparty@2.0.0
+68 verbose installOne of connect-multiparty to f:\Movie not in flight; installing
+69 verbose lock using C:\Users\Magic-Y\AppData\Roaming\npm-cache\_locks\connect-multiparty-1eb5c89b1b6f21ec.lock for f:\Movie\node_modules\connect-multiparty
+70 silly install write writing connect-multiparty 2.0.0 to f:\Movie\node_modules\connect-multiparty
+71 verbose unbuild node_modules\connect-multiparty
+72 silly gentlyRm f:\Movie\node_modules\connect-multiparty is being purged from base f:\Movie
+73 verbose gentlyRm don't care about contents; nuking f:\Movie\node_modules\connect-multiparty
+74 verbose tar unpack C:\Users\Magic-Y\AppData\Roaming\npm-cache\connect-multiparty\2.0.0\package.tgz
+75 verbose tar unpacking to f:\Movie\node_modules\connect-multiparty
+76 silly gentlyRm f:\Movie\node_modules\connect-multiparty is being purged
+77 verbose gentlyRm don't care about contents; nuking f:\Movie\node_modules\connect-multiparty
+78 silly gunzTarPerm modes [ '777', '666' ]
+79 silly gunzTarPerm extractEntry package.json
+80 silly gunzTarPerm extractEntry .npmignore
+81 silly gunzTarPerm extractEntry README.md
+82 silly gunzTarPerm extractEntry index.js
+83 silly gunzTarPerm extractEntry CHANGELOG.md
+84 verbose write writing to f:\Movie\node_modules\connect-multiparty\package.json
+85 info preinstall connect-multiparty@2.0.0
+86 verbose readDependencies loading dependencies from f:\Movie\node_modules\connect-multiparty\package.json
+87 silly prepareForInstallMany adding multiparty@~4.1.2 from connect-multiparty dependencies
+88 silly prepareForInstallMany adding on-finished@~2.3.0 from connect-multiparty dependencies
+89 silly prepareForInstallMany adding qs@~4.0.0 from connect-multiparty dependencies
+90 silly prepareForInstallMany adding type-is@~1.6.4 from connect-multiparty dependencies
+91 verbose readDependencies loading dependencies from f:\Movie\node_modules\connect-multiparty\package.json
+92 silly cache add args [ 'multiparty@~4.1.2', null ]
+93 verbose cache add spec multiparty@~4.1.2
+94 silly cache add args [ 'on-finished@~2.3.0', null ]
+95 verbose cache add spec on-finished@~2.3.0
+96 silly cache add parsed spec Result {
+96 silly cache add   raw: 'multiparty@~4.1.2',
+96 silly cache add   scope: null,
+96 silly cache add   name: 'multiparty',
+96 silly cache add   rawSpec: '~4.1.2',
+96 silly cache add   spec: '>=4.1.2 <4.2.0',
+96 silly cache add   type: 'range' }
+97 silly addNamed multiparty@>=4.1.2 <4.2.0
+98 verbose addNamed ">=4.1.2 <4.2.0" is a valid semver range for multiparty
+99 silly addNameRange { name: 'multiparty', range: '>=4.1.2 <4.2.0', hasData: false }
+100 silly mapToRegistry name multiparty
+101 silly mapToRegistry using default registry
+102 silly mapToRegistry registry https://registry.npmjs.org/
+103 silly mapToRegistry uri https://registry.npmjs.org/multiparty
+104 verbose addNameRange registry:https://registry.npmjs.org/multiparty not in flight; fetching
+105 silly cache add parsed spec Result {
+105 silly cache add   raw: 'on-finished@~2.3.0',
+105 silly cache add   scope: null,
+105 silly cache add   name: 'on-finished',
+105 silly cache add   rawSpec: '~2.3.0',
+105 silly cache add   spec: '>=2.3.0 <2.4.0',
+105 silly cache add   type: 'range' }
+106 silly addNamed on-finished@>=2.3.0 <2.4.0
+107 verbose addNamed ">=2.3.0 <2.4.0" is a valid semver range for on-finished
+108 silly addNameRange { name: 'on-finished', range: '>=2.3.0 <2.4.0', hasData: false }
+109 silly mapToRegistry name on-finished
+110 silly mapToRegistry using default registry
+111 silly mapToRegistry registry https://registry.npmjs.org/
+112 silly mapToRegistry uri https://registry.npmjs.org/on-finished
+113 verbose addNameRange registry:https://registry.npmjs.org/on-finished not in flight; fetching
+114 silly cache add args [ 'qs@~4.0.0', null ]
+115 verbose cache add spec qs@~4.0.0
+116 silly cache add parsed spec Result {
+116 silly cache add   raw: 'qs@~4.0.0',
+116 silly cache add   scope: null,
+116 silly cache add   name: 'qs',
+116 silly cache add   rawSpec: '~4.0.0',
+116 silly cache add   spec: '>=4.0.0 <4.1.0',
+116 silly cache add   type: 'range' }
+117 silly addNamed qs@>=4.0.0 <4.1.0
+118 verbose addNamed ">=4.0.0 <4.1.0" is a valid semver range for qs
+119 silly addNameRange { name: 'qs', range: '>=4.0.0 <4.1.0', hasData: false }
+120 silly mapToRegistry name qs
+121 silly mapToRegistry using default registry
+122 silly mapToRegistry registry https://registry.npmjs.org/
+123 silly mapToRegistry uri https://registry.npmjs.org/qs
+124 verbose addNameRange registry:https://registry.npmjs.org/qs not in flight; fetching
+125 silly cache add args [ 'type-is@~1.6.4', null ]
+126 verbose cache add spec type-is@~1.6.4
+127 silly cache add parsed spec Result {
+127 silly cache add   raw: 'type-is@~1.6.4',
+127 silly cache add   scope: null,
+127 silly cache add   name: 'type-is',
+127 silly cache add   rawSpec: '~1.6.4',
+127 silly cache add   spec: '>=1.6.4 <1.7.0',
+127 silly cache add   type: 'range' }
+128 silly addNamed type-is@>=1.6.4 <1.7.0
+129 verbose addNamed ">=1.6.4 <1.7.0" is a valid semver range for type-is
+130 silly addNameRange { name: 'type-is', range: '>=1.6.4 <1.7.0', hasData: false }
+131 silly mapToRegistry name type-is
+132 silly mapToRegistry using default registry
+133 silly mapToRegistry registry https://registry.npmjs.org/
+134 silly mapToRegistry uri https://registry.npmjs.org/type-is
+135 verbose addNameRange registry:https://registry.npmjs.org/type-is not in flight; fetching
+136 verbose request uri https://registry.npmjs.org/on-finished
+137 verbose request no auth needed
+138 info attempt registry request try #1 at 11:07:58
+139 verbose etag "5HI975RQQ4ZMWO79KX96Q7Y6V"
+140 http request GET https://registry.npmjs.org/on-finished
+141 verbose request uri https://registry.npmjs.org/multiparty
+142 verbose request no auth needed
+143 info attempt registry request try #1 at 11:07:58
+144 verbose etag "8M40MYWPONTY8Q9GYB3GKODT"
+145 http request GET https://registry.npmjs.org/multiparty
+146 verbose request uri https://registry.npmjs.org/type-is
+147 verbose request no auth needed
+148 info attempt registry request try #1 at 11:07:58
+149 verbose etag "CGHVEK69AZAG02ITWCDPLXX05"
+150 http request GET https://registry.npmjs.org/type-is
+151 verbose request uri https://registry.npmjs.org/qs
+152 verbose request no auth needed
+153 info attempt registry request try #1 at 11:07:58
+154 verbose etag "B0T1YHZIW2HJ8JNLNUVBOJNBN"
+155 http request GET https://registry.npmjs.org/qs
+156 http 200 https://registry.npmjs.org/multiparty
+157 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+157 verbose headers   etag: '"25ALWFA5V4UT0LOS7QJ835GP8"',
+157 verbose headers   'content-type': 'application/json',
+157 verbose headers   'content-encoding': 'gzip',
+157 verbose headers   'cache-control': 'max-age=300',
+157 verbose headers   'content-length': '8224',
+157 verbose headers   'accept-ranges': 'bytes',
+157 verbose headers   date: 'Fri, 06 May 2016 03:08:01 GMT',
+157 verbose headers   via: '1.1 varnish',
+157 verbose headers   age: '218',
+157 verbose headers   connection: 'keep-alive',
+157 verbose headers   'x-served-by': 'cache-ams4121-AMS',
+157 verbose headers   'x-cache': 'HIT',
+157 verbose headers   'x-cache-hits': '2',
+157 verbose headers   'x-timer': 'S1462504081.086847,VS0,VE0',
+157 verbose headers   vary: 'Accept-Encoding' }
+158 silly get cb [ 200,
+158 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+158 silly get     etag: '"25ALWFA5V4UT0LOS7QJ835GP8"',
+158 silly get     'content-type': 'application/json',
+158 silly get     'content-encoding': 'gzip',
+158 silly get     'cache-control': 'max-age=300',
+158 silly get     'content-length': '8224',
+158 silly get     'accept-ranges': 'bytes',
+158 silly get     date: 'Fri, 06 May 2016 03:08:01 GMT',
+158 silly get     via: '1.1 varnish',
+158 silly get     age: '218',
+158 silly get     connection: 'keep-alive',
+158 silly get     'x-served-by': 'cache-ams4121-AMS',
+158 silly get     'x-cache': 'HIT',
+158 silly get     'x-cache-hits': '2',
+158 silly get     'x-timer': 'S1462504081.086847,VS0,VE0',
+158 silly get     vary: 'Accept-Encoding' } ]
+159 verbose get saving multiparty to C:\Users\Magic-Y\AppData\Roaming\npm-cache\registry.npmjs.org\multiparty\.cache.json
+160 silly addNameRange number 2 { name: 'multiparty', range: '>=4.1.2 <4.2.0', hasData: true }
+161 silly addNameRange versions [ 'multiparty',
+161 silly addNameRange   [ '2.0.0',
+161 silly addNameRange     '2.1.0',
+161 silly addNameRange     '2.1.1',
+161 silly addNameRange     '2.1.2',
+161 silly addNameRange     '2.1.3',
+161 silly addNameRange     '2.1.4',
+161 silly addNameRange     '2.1.5',
+161 silly addNameRange     '2.1.6',
+161 silly addNameRange     '2.1.7',
+161 silly addNameRange     '2.1.8',
+161 silly addNameRange     '2.1.9',
+161 silly addNameRange     '2.2.0',
+161 silly addNameRange     '3.0.0',
+161 silly addNameRange     '3.1.0',
+161 silly addNameRange     '3.1.1',
+161 silly addNameRange     '3.1.2',
+161 silly addNameRange     '3.2.0',
+161 silly addNameRange     '3.2.1',
+161 silly addNameRange     '3.2.2',
+161 silly addNameRange     '3.2.3',
+161 silly addNameRange     '3.2.4',
+161 silly addNameRange     '3.2.5',
+161 silly addNameRange     '3.2.6',
+161 silly addNameRange     '3.2.7',
+161 silly addNameRange     '3.2.8',
+161 silly addNameRange     '3.2.9',
+161 silly addNameRange     '3.3.0',
+161 silly addNameRange     '3.2.10',
+161 silly addNameRange     '3.3.1',
+161 silly addNameRange     '3.3.2',
+161 silly addNameRange     '4.0.0',
+161 silly addNameRange     '4.1.0',
+161 silly addNameRange     '4.1.1',
+161 silly addNameRange     '4.1.2' ] ]
+162 silly addNamed multiparty@4.1.2
+163 verbose addNamed "4.1.2" is a plain semver version for multiparty
+164 http 200 https://registry.npmjs.org/qs
+165 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+165 verbose headers   etag: '"EQ0BVLLDEV5N6DY3TS2T06WQA"',
+165 verbose headers   'content-type': 'application/json',
+165 verbose headers   'content-encoding': 'gzip',
+165 verbose headers   'cache-control': 'max-age=300',
+165 verbose headers   'content-length': '12402',
+165 verbose headers   'accept-ranges': 'bytes',
+165 verbose headers   date: 'Fri, 06 May 2016 03:08:01 GMT',
+165 verbose headers   via: '1.1 varnish',
+165 verbose headers   age: '200',
+165 verbose headers   connection: 'keep-alive',
+165 verbose headers   'x-served-by': 'cache-ams4141-AMS',
+165 verbose headers   'x-cache': 'HIT',
+165 verbose headers   'x-cache-hits': '5',
+165 verbose headers   'x-timer': 'S1462504081.108638,VS0,VE0',
+165 verbose headers   vary: 'Accept-Encoding' }
+166 silly get cb [ 200,
+166 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+166 silly get     etag: '"EQ0BVLLDEV5N6DY3TS2T06WQA"',
+166 silly get     'content-type': 'application/json',
+166 silly get     'content-encoding': 'gzip',
+166 silly get     'cache-control': 'max-age=300',
+166 silly get     'content-length': '12402',
+166 silly get     'accept-ranges': 'bytes',
+166 silly get     date: 'Fri, 06 May 2016 03:08:01 GMT',
+166 silly get     via: '1.1 varnish',
+166 silly get     age: '200',
+166 silly get     connection: 'keep-alive',
+166 silly get     'x-served-by': 'cache-ams4141-AMS',
+166 silly get     'x-cache': 'HIT',
+166 silly get     'x-cache-hits': '5',
+166 silly get     'x-timer': 'S1462504081.108638,VS0,VE0',
+166 silly get     vary: 'Accept-Encoding' } ]
+167 verbose get saving qs to C:\Users\Magic-Y\AppData\Roaming\npm-cache\registry.npmjs.org\qs\.cache.json
+168 http 304 https://registry.npmjs.org/on-finished
+169 verbose headers { date: 'Fri, 06 May 2016 03:08:01 GMT',
+169 verbose headers   via: '1.1 varnish',
+169 verbose headers   'cache-control': 'max-age=300',
+169 verbose headers   etag: '"5HI975RQQ4ZMWO79KX96Q7Y6V"',
+169 verbose headers   age: '281',
+169 verbose headers   connection: 'keep-alive',
+169 verbose headers   'x-served-by': 'cache-ams4141-AMS',
+169 verbose headers   'x-cache': 'HIT',
+169 verbose headers   'x-cache-hits': '3',
+169 verbose headers   'x-timer': 'S1462504081.117475,VS0,VE0',
+169 verbose headers   vary: 'Accept-Encoding' }
+170 silly get cb [ 304,
+170 silly get   { date: 'Fri, 06 May 2016 03:08:01 GMT',
+170 silly get     via: '1.1 varnish',
+170 silly get     'cache-control': 'max-age=300',
+170 silly get     etag: '"5HI975RQQ4ZMWO79KX96Q7Y6V"',
+170 silly get     age: '281',
+170 silly get     connection: 'keep-alive',
+170 silly get     'x-served-by': 'cache-ams4141-AMS',
+170 silly get     'x-cache': 'HIT',
+170 silly get     'x-cache-hits': '3',
+170 silly get     'x-timer': 'S1462504081.117475,VS0,VE0',
+170 silly get     vary: 'Accept-Encoding' } ]
+171 verbose etag https://registry.npmjs.org/on-finished from cache
+172 verbose get saving on-finished to C:\Users\Magic-Y\AppData\Roaming\npm-cache\registry.npmjs.org\on-finished\.cache.json
+173 http 304 https://registry.npmjs.org/type-is
+174 verbose headers { date: 'Fri, 06 May 2016 03:08:01 GMT',
+174 verbose headers   via: '1.1 varnish',
+174 verbose headers   'cache-control': 'max-age=300',
+174 verbose headers   etag: '"CGHVEK69AZAG02ITWCDPLXX05"',
+174 verbose headers   age: '94',
+174 verbose headers   connection: 'keep-alive',
+174 verbose headers   'x-served-by': 'cache-ams4137-AMS',
+174 verbose headers   'x-cache': 'HIT',
+174 verbose headers   'x-cache-hits': '1',
+174 verbose headers   'x-timer': 'S1462504081.126502,VS0,VE0',
+174 verbose headers   vary: 'Accept-Encoding' }
+175 silly get cb [ 304,
+175 silly get   { date: 'Fri, 06 May 2016 03:08:01 GMT',
+175 silly get     via: '1.1 varnish',
+175 silly get     'cache-control': 'max-age=300',
+175 silly get     etag: '"CGHVEK69AZAG02ITWCDPLXX05"',
+175 silly get     age: '94',
+175 silly get     connection: 'keep-alive',
+175 silly get     'x-served-by': 'cache-ams4137-AMS',
+175 silly get     'x-cache': 'HIT',
+175 silly get     'x-cache-hits': '1',
+175 silly get     'x-timer': 'S1462504081.126502,VS0,VE0',
+175 silly get     vary: 'Accept-Encoding' } ]
+176 verbose etag https://registry.npmjs.org/type-is from cache
+177 verbose get saving type-is to C:\Users\Magic-Y\AppData\Roaming\npm-cache\registry.npmjs.org\type-is\.cache.json
+178 silly mapToRegistry name multiparty
+179 silly mapToRegistry using default registry
+180 silly mapToRegistry registry https://registry.npmjs.org/
+181 silly mapToRegistry uri https://registry.npmjs.org/multiparty
+182 verbose addRemoteTarball https://registry.npmjs.org/multiparty/-/multiparty-4.1.2.tgz not in flight; adding
+183 verbose addRemoteTarball [ 'https://registry.npmjs.org/multiparty/-/multiparty-4.1.2.tgz',
+183 verbose addRemoteTarball   '54f8ec9712052fa1dfd8ec975056c8230d6f2370' ]
+184 info retry fetch attempt 1 at 11:07:59
+185 info attempt registry request try #1 at 11:07:59
+186 http fetch GET https://registry.npmjs.org/multiparty/-/multiparty-4.1.2.tgz
+187 silly addNameRange number 2 { name: 'on-finished', range: '>=2.3.0 <2.4.0', hasData: true }
+188 silly addNameRange versions [ 'on-finished',
+188 silly addNameRange   [ '2.0.0', '2.1.0', '2.1.1', '2.2.0', '2.2.1', '2.3.0' ] ]
+189 silly addNamed on-finished@2.3.0
+190 verbose addNamed "2.3.0" is a plain semver version for on-finished
+191 silly addNameRange number 2 { name: 'qs', range: '>=4.0.0 <4.1.0', hasData: true }
+192 silly addNameRange versions [ 'qs',
+192 silly addNameRange   [ '0.0.1',
+192 silly addNameRange     '0.0.2',
+192 silly addNameRange     '0.0.3',
+192 silly addNameRange     '0.0.4',
+192 silly addNameRange     '0.0.5',
+192 silly addNameRange     '0.0.6',
+192 silly addNameRange     '0.0.7',
+192 silly addNameRange     '0.1.0',
+192 silly addNameRange     '0.2.0',
+192 silly addNameRange     '0.3.0',
+192 silly addNameRange     '0.3.1',
+192 silly addNameRange     '0.3.2',
+192 silly addNameRange     '0.4.0',
+192 silly addNameRange     '0.4.1',
+192 silly addNameRange     '0.4.2',
+192 silly addNameRange     '0.5.0',
+192 silly addNameRange     '0.5.1',
+192 silly addNameRange     '0.5.2',
+192 silly addNameRange     '0.5.3',
+192 silly addNameRange     '0.5.4',
+192 silly addNameRange     '0.5.5',
+192 silly addNameRange     '0.5.6',
+192 silly addNameRange     '0.6.0',
+192 silly addNameRange     '0.6.1',
+192 silly addNameRange     '0.6.2',
+192 silly addNameRange     '0.6.3',
+192 silly addNameRange     '0.6.4',
+192 silly addNameRange     '0.6.5',
+192 silly addNameRange     '0.6.6',
+192 silly addNameRange     '1.0.0',
+192 silly addNameRange     '1.0.1',
+192 silly addNameRange     '1.0.2',
+192 silly addNameRange     '1.1.0',
+192 silly addNameRange     '1.2.0',
+192 silly addNameRange     '1.2.1',
+192 silly addNameRange     '1.2.2',
+192 silly addNameRange     '2.0.0',
+192 silly addNameRange     '2.1.0',
+192 silly addNameRange     '2.2.0',
+192 silly addNameRange     '2.2.1',
+192 silly addNameRange     '2.2.2',
+192 silly addNameRange     '2.2.3',
+192 silly addNameRange     '2.2.4',
+192 silly addNameRange     '2.2.5',
+192 silly addNameRange     '2.3.0',
+192 silly addNameRange     '2.3.1',
+192 silly addNameRange     '2.3.2',
+192 silly addNameRange     '2.3.3',
+192 silly addNameRange     '2.4.0',
+192 silly addNameRange     '2.4.1',
+192 silly addNameRange     '2.4.2',
+192 silly addNameRange     '3.0.0',
+192 silly addNameRange     '3.1.0',
+192 silly addNameRange     '4.0.0',
+192 silly addNameRange     '5.0.0',
+192 silly addNameRange     '5.1.0',
+192 silly addNameRange     '5.2.0',
+192 silly addNameRange     '6.0.0',
+192 silly addNameRange     '6.0.1',
+192 silly addNameRange     '6.0.2',
+192 silly addNameRange     '6.1.0' ] ]
+193 silly addNamed qs@4.0.0
+194 verbose addNamed "4.0.0" is a plain semver version for qs
+195 silly addNameRange number 2 { name: 'type-is', range: '>=1.6.4 <1.7.0', hasData: true }
+196 silly addNameRange versions [ 'type-is',
+196 silly addNameRange   [ '1.0.0',
+196 silly addNameRange     '1.0.1',
+196 silly addNameRange     '1.1.0',
+196 silly addNameRange     '1.2.0',
+196 silly addNameRange     '1.2.1',
+196 silly addNameRange     '1.2.2',
+196 silly addNameRange     '1.3.0',
+196 silly addNameRange     '1.3.1',
+196 silly addNameRange     '1.3.2',
+196 silly addNameRange     '1.4.0',
+196 silly addNameRange     '1.5.0',
+196 silly addNameRange     '1.5.1',
+196 silly addNameRange     '1.5.2',
+196 silly addNameRange     '1.5.3',
+196 silly addNameRange     '1.5.4',
+196 silly addNameRange     '1.5.5',
+196 silly addNameRange     '1.5.6',
+196 silly addNameRange     '1.5.7',
+196 silly addNameRange     '1.6.0',
+196 silly addNameRange     '1.6.1',
+196 silly addNameRange     '1.6.2',
+196 silly addNameRange     '1.6.3',
+196 silly addNameRange     '1.6.4',
+196 silly addNameRange     '1.6.5',
+196 silly addNameRange     '1.6.6',
+196 silly addNameRange     '1.6.7',
+196 silly addNameRange     '1.6.8',
+196 silly addNameRange     '1.6.9',
+196 silly addNameRange     '1.6.10',
+196 silly addNameRange     '1.6.11',
+196 silly addNameRange     '1.6.12' ] ]
+197 silly addNamed type-is@1.6.12
+198 verbose addNamed "1.6.12" is a plain semver version for type-is
+199 silly cache afterAdd on-finished@2.3.0
+200 verbose afterAdd C:\Users\Magic-Y\AppData\Roaming\npm-cache\on-finished\2.3.0\package\package.json not in flight; writing
+201 verbose afterAdd C:\Users\Magic-Y\AppData\Roaming\npm-cache\on-finished\2.3.0\package\package.json written
+202 silly cache afterAdd qs@4.0.0
+203 verbose afterAdd C:\Users\Magic-Y\AppData\Roaming\npm-cache\qs\4.0.0\package\package.json not in flight; writing
+204 verbose afterAdd C:\Users\Magic-Y\AppData\Roaming\npm-cache\qs\4.0.0\package\package.json written
+205 silly cache afterAdd type-is@1.6.12
+206 verbose afterAdd C:\Users\Magic-Y\AppData\Roaming\npm-cache\type-is\1.6.12\package\package.json not in flight; writing
+207 verbose afterAdd C:\Users\Magic-Y\AppData\Roaming\npm-cache\type-is\1.6.12\package\package.json written
+208 http fetch 200 https://registry.npmjs.org/multiparty/-/multiparty-4.1.2.tgz
+209 silly fetchAndShaCheck shasum 54f8ec9712052fa1dfd8ec975056c8230d6f2370
+210 verbose addTmpTarball C:\Users\Magic-Y\AppData\Local\Temp\npm-6744-a53c2253\registry.npmjs.org\multiparty\-\multiparty-4.1.2.tgz not in flight; adding
+211 verbose addTmpTarball already have metadata; skipping unpack for multiparty@4.1.2
+212 silly cache afterAdd multiparty@4.1.2
+213 verbose afterAdd C:\Users\Magic-Y\AppData\Roaming\npm-cache\multiparty\4.1.2\package\package.json not in flight; writing
+214 verbose afterAdd C:\Users\Magic-Y\AppData\Roaming\npm-cache\multiparty\4.1.2\package\package.json written
+215 silly install resolved [ { name: 'on-finished',
+215 silly install resolved     description: 'Execute a callback when a request closes, finishes, or errors',
+215 silly install resolved     version: '2.3.0',
+215 silly install resolved     contributors: [ [Object], [Object] ],
+215 silly install resolved     license: 'MIT',
+215 silly install resolved     repository:
+215 silly install resolved      { type: 'git',
+215 silly install resolved        url: 'git+https://github.com/jshttp/on-finished.git' },
+215 silly install resolved     dependencies: { 'ee-first': '1.1.1' },
+215 silly install resolved     devDependencies: { istanbul: '0.3.9', mocha: '2.2.5' },
+215 silly install resolved     engines: { node: '>= 0.8' },
+215 silly install resolved     files: [ 'HISTORY.md', 'LICENSE', 'index.js' ],
+215 silly install resolved     scripts:
+215 silly install resolved      { test: 'mocha --reporter spec --bail --check-leaks test/',
+215 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/',
+215 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/' },
+215 silly install resolved     gitHead: '34babcb58126a416fcf5205768204f2e12699dda',
+215 silly install resolved     bugs: { url: 'https://github.com/jshttp/on-finished/issues' },
+215 silly install resolved     homepage: 'https://github.com/jshttp/on-finished',
+215 silly install resolved     _id: 'on-finished@2.3.0',
+215 silly install resolved     _shasum: '20f1336481b083cd75337992a16971aa2d906947',
+215 silly install resolved     _from: 'on-finished@>=2.3.0 <2.4.0',
+215 silly install resolved     _npmVersion: '1.4.28',
+215 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+215 silly install resolved     maintainers: [ [Object], [Object] ],
+215 silly install resolved     dist:
+215 silly install resolved      { shasum: '20f1336481b083cd75337992a16971aa2d906947',
+215 silly install resolved        tarball: 'http://registry.npmjs.org/on-finished/-/on-finished-2.3.0.tgz' },
+215 silly install resolved     directories: {},
+215 silly install resolved     _resolved: 'https://registry.npmjs.org/on-finished/-/on-finished-2.3.0.tgz',
+215 silly install resolved     readme: 'ERROR: No README data found!' },
+215 silly install resolved   { name: 'qs',
+215 silly install resolved     version: '4.0.0',
+215 silly install resolved     description: 'A querystring parser that supports nesting and arrays, with a depth limit',
+215 silly install resolved     homepage: 'https://github.com/hapijs/qs',
+215 silly install resolved     main: 'lib/index.js',
+215 silly install resolved     dependencies: {},
+215 silly install resolved     devDependencies: { browserify: '^10.2.1', code: '1.x.x', lab: '5.x.x' },
+215 silly install resolved     scripts:
+215 silly install resolved      { test: 'lab -a code -t 100 -L',
+215 silly install resolved        'test-cov-html': 'lab -a code -r html -o coverage.html',
+215 silly install resolved        dist: 'browserify --standalone Qs lib/index.js > dist/qs.js' },
+215 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/hapijs/qs.git' },
+215 silly install resolved     keywords: [ 'querystring', 'qs' ],
+215 silly install resolved     license: 'BSD-3-Clause',
+215 silly install resolved     gitHead: 'e573dd08eae6cce30d2202704691a102dfa3782a',
+215 silly install resolved     bugs: { url: 'https://github.com/hapijs/qs/issues' },
+215 silly install resolved     _id: 'qs@4.0.0',
+215 silly install resolved     _shasum: 'c31d9b74ec27df75e543a86c78728ed8d4623607',
+215 silly install resolved     _from: 'qs@>=4.0.0 <4.1.0',
+215 silly install resolved     _npmVersion: '2.12.0',
+215 silly install resolved     _nodeVersion: '0.12.4',
+215 silly install resolved     _npmUser: { name: 'nlf', email: 'quitlahok@gmail.com' },
+215 silly install resolved     dist:
+215 silly install resolved      { shasum: 'c31d9b74ec27df75e543a86c78728ed8d4623607',
+215 silly install resolved        tarball: 'https://registry.npmjs.org/qs/-/qs-4.0.0.tgz' },
+215 silly install resolved     maintainers: [ [Object], [Object] ],
+215 silly install resolved     directories: {},
+215 silly install resolved     _resolved: 'https://registry.npmjs.org/qs/-/qs-4.0.0.tgz',
+215 silly install resolved     readme: 'ERROR: No README data found!' },
+215 silly install resolved   { name: 'type-is',
+215 silly install resolved     description: 'Infer the content-type of a request.',
+215 silly install resolved     version: '1.6.12',
+215 silly install resolved     contributors: [ [Object], [Object] ],
+215 silly install resolved     license: 'MIT',
+215 silly install resolved     repository:
+215 silly install resolved      { type: 'git',
+215 silly install resolved        url: 'git+https://github.com/jshttp/type-is.git' },
+215 silly install resolved     dependencies: { 'media-typer': '0.3.0', 'mime-types': '~2.1.10' },
+215 silly install resolved     devDependencies: { istanbul: '0.4.2', mocha: '1.21.5' },
+215 silly install resolved     engines: { node: '>= 0.6' },
+215 silly install resolved     files: [ 'LICENSE', 'HISTORY.md', 'index.js' ],
+215 silly install resolved     scripts:
+215 silly install resolved      { test: 'mocha --reporter spec --check-leaks --bail test/',
+215 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/',
+215 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/' },
+215 silly install resolved     keywords: [ 'content', 'type', 'checking' ],
+215 silly install resolved     gitHead: '7ba49c0ccc8e34f4321768c0b13c2ebcccaae28c',
+215 silly install resolved     bugs: { url: 'https://github.com/jshttp/type-is/issues' },
+215 silly install resolved     homepage: 'https://github.com/jshttp/type-is',
+215 silly install resolved     _id: 'type-is@1.6.12',
+215 silly install resolved     _shasum: '0352a9dfbfff040fe668cc153cc95829c354173e',
+215 silly install resolved     _from: 'type-is@>=1.6.4 <1.7.0',
+215 silly install resolved     _npmVersion: '1.4.28',
+215 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+215 silly install resolved     maintainers: [ [Object], [Object] ],
+215 silly install resolved     dist:
+215 silly install resolved      { shasum: '0352a9dfbfff040fe668cc153cc95829c354173e',
+215 silly install resolved        tarball: 'http://registry.npmjs.org/type-is/-/type-is-1.6.12.tgz' },
+215 silly install resolved     _npmOperationalInternal:
+215 silly install resolved      { host: 'packages-9-west.internal.npmjs.com',
+215 silly install resolved        tmp: 'tmp/type-is-1.6.12.tgz_1456726142464_0.8247741810046136' },
+215 silly install resolved     directories: {},
+215 silly install resolved     _resolved: 'https://registry.npmjs.org/type-is/-/type-is-1.6.12.tgz',
+215 silly install resolved     readme: 'ERROR: No README data found!' },
+215 silly install resolved   { name: 'multiparty',
+215 silly install resolved     version: '4.1.2',
+215 silly install resolved     description: 'multipart/form-data parser which supports streaming',
+215 silly install resolved     repository:
+215 silly install resolved      { type: 'git',
+215 silly install resolved        url: 'git@github.com:andrewrk/node-multiparty.git' },
+215 silly install resolved     keywords: [ 'file', 'upload', 'formidable', 'stream', 's3' ],
+215 silly install resolved     devDependencies:
+215 silly install resolved      { findit2: '~2.2.3',
+215 silly install resolved        istanbul: '~0.3.4',
+215 silly install resolved        mkdirp: '~0.5.0',
+215 silly install resolved        pend: '~1.2.0',
+215 silly install resolved        rimraf: '~2.2.8',
+215 silly install resolved        superagent: '~0.21.0' },
+215 silly install resolved     scripts:
+215 silly install resolved      { test: 'node test/test.js',
+215 silly install resolved        'test-cov': 'istanbul cover test/test.js',
+215 silly install resolved        'test-travis': 'istanbul cover test/test.js --report lcovonly' },
+215 silly install resolved     engines: { node: '>=0.10.0' },
+215 silly install resolved     license: 'MIT',
+215 silly install resolved     dependencies: { 'fd-slicer': '~1.0.0' },
+215 silly install resolved     bugs: { url: 'https://github.com/andrewrk/node-multiparty/issues' },
+215 silly install resolved     main: 'index.js',
+215 silly install resolved     directories: { example: 'examples', test: 'test' },
+215 silly install resolved     author: { name: 'Andrew Kelley', email: 'superjoe30@gmail.com' },
+215 silly install resolved     gitHead: '5410be09a1efa3f4657c341ad170068ab83cc36d',
+215 silly install resolved     homepage: 'https://github.com/andrewrk/node-multiparty',
+215 silly install resolved     _id: 'multiparty@4.1.2',
+215 silly install resolved     _shasum: '54f8ec9712052fa1dfd8ec975056c8230d6f2370',
+215 silly install resolved     _from: 'multiparty@>=4.1.2 <4.2.0',
+215 silly install resolved     _npmVersion: '1.4.28',
+215 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+215 silly install resolved     maintainers: [ [Object], [Object] ],
+215 silly install resolved     dist:
+215 silly install resolved      { shasum: '54f8ec9712052fa1dfd8ec975056c8230d6f2370',
+215 silly install resolved        tarball: 'https://registry.npmjs.org/multiparty/-/multiparty-4.1.2.tgz' },
+215 silly install resolved     _resolved: 'https://registry.npmjs.org/multiparty/-/multiparty-4.1.2.tgz' } ]
+216 info install on-finished@2.3.0 into f:\Movie\node_modules\connect-multiparty
+217 info install qs@4.0.0 into f:\Movie\node_modules\connect-multiparty
+218 info install type-is@1.6.12 into f:\Movie\node_modules\connect-multiparty
+219 info install multiparty@4.1.2 into f:\Movie\node_modules\connect-multiparty
+220 info installOne on-finished@2.3.0
+221 verbose installOne of on-finished to f:\Movie\node_modules\connect-multiparty not in flight; installing
+222 info installOne qs@4.0.0
+223 verbose installOne of qs to f:\Movie\node_modules\connect-multiparty not in flight; installing
+224 info installOne type-is@1.6.12
+225 verbose installOne of type-is to f:\Movie\node_modules\connect-multiparty not in flight; installing
+226 info installOne multiparty@4.1.2
+227 verbose installOne of multiparty to f:\Movie\node_modules\connect-multiparty not in flight; installing
+228 verbose lock using C:\Users\Magic-Y\AppData\Roaming\npm-cache\_locks\on-finished-bc72850d34b1add5.lock for f:\Movie\node_modules\connect-multiparty\node_modules\on-finished
+229 verbose lock using C:\Users\Magic-Y\AppData\Roaming\npm-cache\_locks\multiparty-65341f8e3848fb1e.lock for f:\Movie\node_modules\connect-multiparty\node_modules\multiparty
+230 verbose lock using C:\Users\Magic-Y\AppData\Roaming\npm-cache\_locks\type-is-5f86a333c33f5063.lock for f:\Movie\node_modules\connect-multiparty\node_modules\type-is
+231 verbose lock using C:\Users\Magic-Y\AppData\Roaming\npm-cache\_locks\qs-1ee7c13af7276537.lock for f:\Movie\node_modules\connect-multiparty\node_modules\qs
+232 silly install write writing on-finished 2.3.0 to f:\Movie\node_modules\connect-multiparty\node_modules\on-finished
+233 silly install write writing multiparty 4.1.2 to f:\Movie\node_modules\connect-multiparty\node_modules\multiparty
+234 silly install write writing type-is 1.6.12 to f:\Movie\node_modules\connect-multiparty\node_modules\type-is
+235 silly install write writing qs 4.0.0 to f:\Movie\node_modules\connect-multiparty\node_modules\qs
+236 verbose unbuild node_modules\connect-multiparty\node_modules\on-finished
+237 verbose unbuild node_modules\connect-multiparty\node_modules\type-is
+238 verbose unbuild node_modules\connect-multiparty\node_modules\multiparty
+239 verbose unbuild node_modules\connect-multiparty\node_modules\qs
+240 silly gentlyRm f:\Movie\node_modules\connect-multiparty\node_modules\on-finished is being purged from base f:\Movie
+241 verbose gentlyRm don't care about contents; nuking f:\Movie\node_modules\connect-multiparty\node_modules\on-finished
+242 silly gentlyRm f:\Movie\node_modules\connect-multiparty\node_modules\type-is is being purged from base f:\Movie
+243 verbose gentlyRm don't care about contents; nuking f:\Movie\node_modules\connect-multiparty\node_modules\type-is
+244 silly gentlyRm f:\Movie\node_modules\connect-multiparty\node_modules\multiparty is being purged from base f:\Movie
+245 verbose gentlyRm don't care about contents; nuking f:\Movie\node_modules\connect-multiparty\node_modules\multiparty
+246 verbose tar unpack C:\Users\Magic-Y\AppData\Roaming\npm-cache\on-finished\2.3.0\package.tgz
+247 verbose tar unpacking to f:\Movie\node_modules\connect-multiparty\node_modules\on-finished
+248 silly gentlyRm f:\Movie\node_modules\connect-multiparty\node_modules\on-finished is being purged
+249 verbose gentlyRm don't care about contents; nuking f:\Movie\node_modules\connect-multiparty\node_modules\on-finished
+250 verbose tar unpack C:\Users\Magic-Y\AppData\Roaming\npm-cache\type-is\1.6.12\package.tgz
+251 verbose tar unpacking to f:\Movie\node_modules\connect-multiparty\node_modules\type-is
+252 silly gentlyRm f:\Movie\node_modules\connect-multiparty\node_modules\type-is is being purged
+253 verbose gentlyRm don't care about contents; nuking f:\Movie\node_modules\connect-multiparty\node_modules\type-is
+254 verbose tar unpack C:\Users\Magic-Y\AppData\Roaming\npm-cache\multiparty\4.1.2\package.tgz
+255 verbose tar unpacking to f:\Movie\node_modules\connect-multiparty\node_modules\multiparty
+256 silly gentlyRm f:\Movie\node_modules\connect-multiparty\node_modules\multiparty is being purged
+257 verbose gentlyRm don't care about contents; nuking f:\Movie\node_modules\connect-multiparty\node_modules\multiparty
+258 silly gentlyRm f:\Movie\node_modules\connect-multiparty\node_modules\qs is being purged from base f:\Movie
+259 verbose gentlyRm don't care about contents; nuking f:\Movie\node_modules\connect-multiparty\node_modules\qs
+260 silly gunzTarPerm modes [ '777', '666' ]
+261 silly gunzTarPerm modes [ '777', '666' ]
+262 silly gunzTarPerm modes [ '777', '666' ]
+263 verbose tar unpack C:\Users\Magic-Y\AppData\Roaming\npm-cache\qs\4.0.0\package.tgz
+264 verbose tar unpacking to f:\Movie\node_modules\connect-multiparty\node_modules\qs
+265 silly gentlyRm f:\Movie\node_modules\connect-multiparty\node_modules\qs is being purged
+266 verbose gentlyRm don't care about contents; nuking f:\Movie\node_modules\connect-multiparty\node_modules\qs
+267 silly gunzTarPerm modes [ '777', '666' ]
+268 silly gunzTarPerm extractEntry package.json
+269 silly gunzTarPerm extractEntry package.json
+270 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+271 silly gunzTarPerm extractEntry package.json
+272 silly gunzTarPerm extractEntry package.json
+273 silly gunzTarPerm extractEntry .npmignore
+274 silly gunzTarPerm extractEntry README.md
+275 silly gunzTarPerm extractEntry .npmignore
+276 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+277 silly gunzTarPerm extractEntry README.md
+278 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+279 silly gunzTarPerm extractEntry README.md
+280 silly gunzTarPerm extractEntry LICENSE
+281 silly gunzTarPerm extractEntry README.md
+282 silly gunzTarPerm extractEntry LICENSE
+283 silly gunzTarPerm extractEntry LICENSE
+284 silly gunzTarPerm extractEntry index.js
+285 silly gunzTarPerm extractEntry LICENSE
+286 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+287 silly gunzTarPerm extractEntry CHANGELOG.md
+288 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 438 ]
+289 silly gunzTarPerm extractEntry index.js
+290 silly gunzTarPerm extractEntry HISTORY.md
+291 silly gunzTarPerm extractEntry index.js
+292 silly gunzTarPerm extractEntry HISTORY.md
+293 silly gunzTarPerm extractEntry CHANGELOG.md
+294 silly gunzTarPerm extractEntry CONTRIBUTING.md
+295 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 420, 438 ]
+296 silly gunzTarPerm extractEntry .eslintignore
+297 silly gunzTarPerm modified mode [ '.eslintignore', 420, 438 ]
+298 silly gunzTarPerm extractEntry bower.json
+299 silly gunzTarPerm modified mode [ 'bower.json', 420, 438 ]
+300 silly gunzTarPerm extractEntry lib/index.js
+301 silly gunzTarPerm modified mode [ 'lib/index.js', 420, 438 ]
+302 silly gunzTarPerm extractEntry lib/parse.js
+303 silly gunzTarPerm modified mode [ 'lib/parse.js', 420, 438 ]
+304 silly gunzTarPerm extractEntry lib/stringify.js
+305 silly gunzTarPerm modified mode [ 'lib/stringify.js', 420, 438 ]
+306 silly gunzTarPerm extractEntry lib/utils.js
+307 silly gunzTarPerm modified mode [ 'lib/utils.js', 420, 438 ]
+308 verbose write writing to f:\Movie\node_modules\connect-multiparty\node_modules\type-is\package.json
+309 verbose write writing to f:\Movie\node_modules\connect-multiparty\node_modules\on-finished\package.json
+310 silly gunzTarPerm extractEntry .travis.yml
+311 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+312 silly gunzTarPerm extractEntry test/parse.js
+313 silly gunzTarPerm modified mode [ 'test/parse.js', 420, 438 ]
+314 info preinstall type-is@1.6.12
+315 info preinstall on-finished@2.3.0
+316 verbose readDependencies loading dependencies from f:\Movie\node_modules\connect-multiparty\node_modules\type-is\package.json
+317 verbose readDependencies loading dependencies from f:\Movie\node_modules\connect-multiparty\node_modules\on-finished\package.json
+318 silly gunzTarPerm extractEntry test/stringify.js
+319 silly gunzTarPerm modified mode [ 'test/stringify.js', 420, 438 ]
+320 silly gunzTarPerm extractEntry test/utils.js
+321 silly gunzTarPerm modified mode [ 'test/utils.js', 420, 438 ]
+322 verbose write writing to f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\package.json
+323 silly prepareForInstallMany adding media-typer@0.3.0 from type-is dependencies
+324 silly prepareForInstallMany adding mime-types@~2.1.10 from type-is dependencies
+325 verbose readDependencies loading dependencies from f:\Movie\node_modules\connect-multiparty\node_modules\type-is\package.json
+326 silly prepareForInstallMany adding ee-first@1.1.1 from on-finished dependencies
+327 verbose readDependencies loading dependencies from f:\Movie\node_modules\connect-multiparty\node_modules\on-finished\package.json
+328 info preinstall multiparty@4.1.2
+329 silly cache add args [ 'media-typer@0.3.0', null ]
+330 verbose cache add spec media-typer@0.3.0
+331 silly cache add parsed spec Result {
+331 silly cache add   raw: 'media-typer@0.3.0',
+331 silly cache add   scope: null,
+331 silly cache add   name: 'media-typer',
+331 silly cache add   rawSpec: '0.3.0',
+331 silly cache add   spec: '0.3.0',
+331 silly cache add   type: 'version' }
+332 silly addNamed media-typer@0.3.0
+333 verbose addNamed "0.3.0" is a plain semver version for media-typer
+334 silly mapToRegistry name media-typer
+335 silly mapToRegistry using default registry
+336 silly mapToRegistry registry https://registry.npmjs.org/
+337 silly mapToRegistry uri https://registry.npmjs.org/media-typer
+338 verbose addNameVersion registry:https://registry.npmjs.org/media-typer not in flight; fetching
+339 silly cache add args [ 'mime-types@~2.1.10', null ]
+340 verbose cache add spec mime-types@~2.1.10
+341 silly cache add parsed spec Result {
+341 silly cache add   raw: 'mime-types@~2.1.10',
+341 silly cache add   scope: null,
+341 silly cache add   name: 'mime-types',
+341 silly cache add   rawSpec: '~2.1.10',
+341 silly cache add   spec: '>=2.1.10 <2.2.0',
+341 silly cache add   type: 'range' }
+342 silly addNamed mime-types@>=2.1.10 <2.2.0
+343 verbose addNamed ">=2.1.10 <2.2.0" is a valid semver range for mime-types
+344 silly addNameRange { name: 'mime-types', range: '>=2.1.10 <2.2.0', hasData: false }
+345 silly mapToRegistry name mime-types
+346 silly mapToRegistry using default registry
+347 silly mapToRegistry registry https://registry.npmjs.org/
+348 silly mapToRegistry uri https://registry.npmjs.org/mime-types
+349 verbose addNameRange registry:https://registry.npmjs.org/mime-types not in flight; fetching
+350 verbose readDependencies loading dependencies from f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\package.json
+351 silly cache add args [ 'ee-first@1.1.1', null ]
+352 verbose cache add spec ee-first@1.1.1
+353 silly cache add parsed spec Result {
+353 silly cache add   raw: 'ee-first@1.1.1',
+353 silly cache add   scope: null,
+353 silly cache add   name: 'ee-first',
+353 silly cache add   rawSpec: '1.1.1',
+353 silly cache add   spec: '1.1.1',
+353 silly cache add   type: 'version' }
+354 silly addNamed ee-first@1.1.1
+355 verbose addNamed "1.1.1" is a plain semver version for ee-first
+356 silly mapToRegistry name ee-first
+357 silly mapToRegistry using default registry
+358 silly mapToRegistry registry https://registry.npmjs.org/
+359 silly mapToRegistry uri https://registry.npmjs.org/ee-first
+360 verbose addNameVersion registry:https://registry.npmjs.org/ee-first not in flight; fetching
+361 silly prepareForInstallMany adding fd-slicer@~1.0.0 from multiparty dependencies
+362 verbose readDependencies loading dependencies from f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\package.json
+363 silly cache add args [ 'fd-slicer@~1.0.0', null ]
+364 verbose cache add spec fd-slicer@~1.0.0
+365 silly cache add parsed spec Result {
+365 silly cache add   raw: 'fd-slicer@~1.0.0',
+365 silly cache add   scope: null,
+365 silly cache add   name: 'fd-slicer',
+365 silly cache add   rawSpec: '~1.0.0',
+365 silly cache add   spec: '>=1.0.0 <1.1.0',
+365 silly cache add   type: 'range' }
+366 silly addNamed fd-slicer@>=1.0.0 <1.1.0
+367 verbose addNamed ">=1.0.0 <1.1.0" is a valid semver range for fd-slicer
+368 silly addNameRange { name: 'fd-slicer', range: '>=1.0.0 <1.1.0', hasData: false }
+369 silly mapToRegistry name fd-slicer
+370 silly mapToRegistry using default registry
+371 silly mapToRegistry registry https://registry.npmjs.org/
+372 silly mapToRegistry uri https://registry.npmjs.org/fd-slicer
+373 verbose addNameRange registry:https://registry.npmjs.org/fd-slicer not in flight; fetching
+374 verbose request uri https://registry.npmjs.org/fd-slicer
+375 verbose request no auth needed
+376 info attempt registry request try #1 at 11:08:01
+377 http request GET https://registry.npmjs.org/fd-slicer
+378 verbose request uri https://registry.npmjs.org/media-typer
+379 verbose request no auth needed
+380 info attempt registry request try #1 at 11:08:01
+381 verbose etag "CON5FDSU4GEB7ZX8QTGPGWOMJ"
+382 http request GET https://registry.npmjs.org/media-typer
+383 verbose request uri https://registry.npmjs.org/ee-first
+384 verbose request no auth needed
+385 info attempt registry request try #1 at 11:08:01
+386 verbose etag "3ZYG9XA9BYU1KE2TX5MRV6U1N"
+387 http request GET https://registry.npmjs.org/ee-first
+388 verbose write writing to f:\Movie\node_modules\connect-multiparty\node_modules\qs\package.json
+389 verbose request uri https://registry.npmjs.org/mime-types
+390 verbose request no auth needed
+391 info attempt registry request try #1 at 11:08:01
+392 verbose etag "6DRB8UMPN10CQEDW0PW2KP5BA"
+393 http request GET https://registry.npmjs.org/mime-types
+394 info preinstall qs@4.0.0
+395 verbose readDependencies loading dependencies from f:\Movie\node_modules\connect-multiparty\node_modules\qs\package.json
+396 verbose readDependencies loading dependencies from f:\Movie\node_modules\connect-multiparty\node_modules\qs\package.json
+397 silly install resolved []
+398 verbose about to build f:\Movie\node_modules\connect-multiparty\node_modules\qs
+399 info build f:\Movie\node_modules\connect-multiparty\node_modules\qs
+400 info linkStuff qs@4.0.0
+401 silly linkStuff qs@4.0.0 has f:\Movie\node_modules\connect-multiparty\node_modules as its parent node_modules
+402 verbose linkBins qs@4.0.0
+403 verbose linkMans qs@4.0.0
+404 verbose rebuildBundles qs@4.0.0
+405 info install qs@4.0.0
+406 info postinstall qs@4.0.0
+407 verbose unlock done using C:\Users\Magic-Y\AppData\Roaming\npm-cache\_locks\qs-1ee7c13af7276537.lock for f:\Movie\node_modules\connect-multiparty\node_modules\qs
+408 http 200 https://registry.npmjs.org/media-typer
+409 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+409 verbose headers   etag: '"5ORHZTRRI5PL86YTBCZIWPFWT"',
+409 verbose headers   'content-type': 'application/json',
+409 verbose headers   'cache-control': 'max-age=300',
+409 verbose headers   'content-length': '7847',
+409 verbose headers   'accept-ranges': 'bytes',
+409 verbose headers   date: 'Fri, 06 May 2016 03:08:04 GMT',
+409 verbose headers   via: '1.1 varnish',
+409 verbose headers   age: '36',
+409 verbose headers   connection: 'keep-alive',
+409 verbose headers   'x-served-by': 'cache-ams4143-AMS',
+409 verbose headers   'x-cache': 'HIT',
+409 verbose headers   'x-cache-hits': '2',
+409 verbose headers   'x-timer': 'S1462504084.378321,VS0,VE0',
+409 verbose headers   vary: 'Accept-Encoding' }
+410 silly get cb [ 200,
+410 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+410 silly get     etag: '"5ORHZTRRI5PL86YTBCZIWPFWT"',
+410 silly get     'content-type': 'application/json',
+410 silly get     'cache-control': 'max-age=300',
+410 silly get     'content-length': '7847',
+410 silly get     'accept-ranges': 'bytes',
+410 silly get     date: 'Fri, 06 May 2016 03:08:04 GMT',
+410 silly get     via: '1.1 varnish',
+410 silly get     age: '36',
+410 silly get     connection: 'keep-alive',
+410 silly get     'x-served-by': 'cache-ams4143-AMS',
+410 silly get     'x-cache': 'HIT',
+410 silly get     'x-cache-hits': '2',
+410 silly get     'x-timer': 'S1462504084.378321,VS0,VE0',
+410 silly get     vary: 'Accept-Encoding' } ]
+411 verbose get saving media-typer to C:\Users\Magic-Y\AppData\Roaming\npm-cache\registry.npmjs.org\media-typer\.cache.json
+412 http 200 https://registry.npmjs.org/fd-slicer
+413 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+413 verbose headers   etag: '"5X3U8UHKAKLPX919GZ0WW4QII"',
+413 verbose headers   'content-type': 'application/json',
+413 verbose headers   'content-encoding': 'gzip',
+413 verbose headers   'cache-control': 'max-age=300',
+413 verbose headers   'content-length': '4364',
+413 verbose headers   'accept-ranges': 'bytes',
+413 verbose headers   date: 'Fri, 06 May 2016 03:08:04 GMT',
+413 verbose headers   via: '1.1 varnish',
+413 verbose headers   age: '248',
+413 verbose headers   connection: 'keep-alive',
+413 verbose headers   'x-served-by': 'cache-ams4120-AMS',
+413 verbose headers   'x-cache': 'HIT',
+413 verbose headers   'x-cache-hits': '1',
+413 verbose headers   'x-timer': 'S1462504084.371632,VS0,VE0',
+413 verbose headers   vary: 'Accept-Encoding' }
+414 silly get cb [ 200,
+414 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+414 silly get     etag: '"5X3U8UHKAKLPX919GZ0WW4QII"',
+414 silly get     'content-type': 'application/json',
+414 silly get     'content-encoding': 'gzip',
+414 silly get     'cache-control': 'max-age=300',
+414 silly get     'content-length': '4364',
+414 silly get     'accept-ranges': 'bytes',
+414 silly get     date: 'Fri, 06 May 2016 03:08:04 GMT',
+414 silly get     via: '1.1 varnish',
+414 silly get     age: '248',
+414 silly get     connection: 'keep-alive',
+414 silly get     'x-served-by': 'cache-ams4120-AMS',
+414 silly get     'x-cache': 'HIT',
+414 silly get     'x-cache-hits': '1',
+414 silly get     'x-timer': 'S1462504084.371632,VS0,VE0',
+414 silly get     vary: 'Accept-Encoding' } ]
+415 verbose get saving fd-slicer to C:\Users\Magic-Y\AppData\Roaming\npm-cache\registry.npmjs.org\fd-slicer\.cache.json
+416 http 200 https://registry.npmjs.org/mime-types
+417 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+417 verbose headers   etag: '"836ERCBZPJ2JKPP6JBXWAUUDO"',
+417 verbose headers   'content-type': 'application/json',
+417 verbose headers   'content-encoding': 'gzip',
+417 verbose headers   'cache-control': 'max-age=300',
+417 verbose headers   'content-length': '6801',
+417 verbose headers   'accept-ranges': 'bytes',
+417 verbose headers   date: 'Fri, 06 May 2016 03:08:04 GMT',
+417 verbose headers   via: '1.1 varnish',
+417 verbose headers   age: '280',
+417 verbose headers   connection: 'keep-alive',
+417 verbose headers   'x-served-by': 'cache-ams4130-AMS',
+417 verbose headers   'x-cache': 'HIT',
+417 verbose headers   'x-cache-hits': '3',
+417 verbose headers   'x-timer': 'S1462504084.385602,VS0,VE0',
+417 verbose headers   vary: 'Accept-Encoding' }
+418 silly get cb [ 200,
+418 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+418 silly get     etag: '"836ERCBZPJ2JKPP6JBXWAUUDO"',
+418 silly get     'content-type': 'application/json',
+418 silly get     'content-encoding': 'gzip',
+418 silly get     'cache-control': 'max-age=300',
+418 silly get     'content-length': '6801',
+418 silly get     'accept-ranges': 'bytes',
+418 silly get     date: 'Fri, 06 May 2016 03:08:04 GMT',
+418 silly get     via: '1.1 varnish',
+418 silly get     age: '280',
+418 silly get     connection: 'keep-alive',
+418 silly get     'x-served-by': 'cache-ams4130-AMS',
+418 silly get     'x-cache': 'HIT',
+418 silly get     'x-cache-hits': '3',
+418 silly get     'x-timer': 'S1462504084.385602,VS0,VE0',
+418 silly get     vary: 'Accept-Encoding' } ]
+419 verbose get saving mime-types to C:\Users\Magic-Y\AppData\Roaming\npm-cache\registry.npmjs.org\mime-types\.cache.json
+420 silly addNameRange number 2 { name: 'fd-slicer', range: '>=1.0.0 <1.1.0', hasData: true }
+421 silly addNameRange versions [ 'fd-slicer',
+421 silly addNameRange   [ '0.0.1',
+421 silly addNameRange     '0.0.2',
+421 silly addNameRange     '0.1.0',
+421 silly addNameRange     '0.2.0',
+421 silly addNameRange     '0.2.1',
+421 silly addNameRange     '0.3.0',
+421 silly addNameRange     '0.3.1',
+421 silly addNameRange     '0.3.2',
+421 silly addNameRange     '0.4.0',
+421 silly addNameRange     '1.0.0',
+421 silly addNameRange     '1.0.1' ] ]
+422 silly addNamed fd-slicer@1.0.1
+423 verbose addNamed "1.0.1" is a plain semver version for fd-slicer
+424 silly mapToRegistry name media-typer
+425 silly mapToRegistry using default registry
+426 silly mapToRegistry registry https://registry.npmjs.org/
+427 silly mapToRegistry uri https://registry.npmjs.org/media-typer
+428 verbose addRemoteTarball https://registry.npmjs.org/media-typer/-/media-typer-0.3.0.tgz not in flight; adding
+429 verbose addRemoteTarball [ 'https://registry.npmjs.org/media-typer/-/media-typer-0.3.0.tgz',
+429 verbose addRemoteTarball   '8710d7af0aa626f8fffa1ce00168545263255748' ]
+430 http 304 https://registry.npmjs.org/ee-first
+431 verbose headers { date: 'Fri, 06 May 2016 03:08:04 GMT',
+431 verbose headers   via: '1.1 varnish',
+431 verbose headers   'cache-control': 'max-age=300',
+431 verbose headers   etag: '"3ZYG9XA9BYU1KE2TX5MRV6U1N"',
+431 verbose headers   age: '95',
+431 verbose headers   connection: 'keep-alive',
+431 verbose headers   'x-served-by': 'cache-ams4147-AMS',
+431 verbose headers   'x-cache': 'HIT',
+431 verbose headers   'x-cache-hits': '1',
+431 verbose headers   'x-timer': 'S1462504084.389991,VS0,VE0',
+431 verbose headers   vary: 'Accept-Encoding' }
+432 silly get cb [ 304,
+432 silly get   { date: 'Fri, 06 May 2016 03:08:04 GMT',
+432 silly get     via: '1.1 varnish',
+432 silly get     'cache-control': 'max-age=300',
+432 silly get     etag: '"3ZYG9XA9BYU1KE2TX5MRV6U1N"',
+432 silly get     age: '95',
+432 silly get     connection: 'keep-alive',
+432 silly get     'x-served-by': 'cache-ams4147-AMS',
+432 silly get     'x-cache': 'HIT',
+432 silly get     'x-cache-hits': '1',
+432 silly get     'x-timer': 'S1462504084.389991,VS0,VE0',
+432 silly get     vary: 'Accept-Encoding' } ]
+433 verbose etag https://registry.npmjs.org/ee-first from cache
+434 verbose get saving ee-first to C:\Users\Magic-Y\AppData\Roaming\npm-cache\registry.npmjs.org\ee-first\.cache.json
+435 info retry fetch attempt 1 at 11:08:02
+436 info attempt registry request try #1 at 11:08:02
+437 http fetch GET https://registry.npmjs.org/media-typer/-/media-typer-0.3.0.tgz
+438 silly mapToRegistry name fd-slicer
+439 silly mapToRegistry using default registry
+440 silly mapToRegistry registry https://registry.npmjs.org/
+441 silly mapToRegistry uri https://registry.npmjs.org/fd-slicer
+442 verbose addRemoteTarball https://registry.npmjs.org/fd-slicer/-/fd-slicer-1.0.1.tgz not in flight; adding
+443 verbose addRemoteTarball [ 'https://registry.npmjs.org/fd-slicer/-/fd-slicer-1.0.1.tgz',
+443 verbose addRemoteTarball   '8b5bcbd9ec327c5041bf9ab023fd6750f1177e65' ]
+444 silly addNameRange number 2 { name: 'mime-types', range: '>=2.1.10 <2.2.0', hasData: true }
+445 silly addNameRange versions [ 'mime-types',
+445 silly addNameRange   [ '0.1.0',
+445 silly addNameRange     '1.0.0',
+445 silly addNameRange     '1.0.1',
+445 silly addNameRange     '1.0.2',
+445 silly addNameRange     '2.0.0',
+445 silly addNameRange     '2.0.1',
+445 silly addNameRange     '2.0.2',
+445 silly addNameRange     '2.0.3',
+445 silly addNameRange     '2.0.4',
+445 silly addNameRange     '2.0.5',
+445 silly addNameRange     '2.0.6',
+445 silly addNameRange     '2.0.7',
+445 silly addNameRange     '2.0.8',
+445 silly addNameRange     '2.0.9',
+445 silly addNameRange     '2.0.10',
+445 silly addNameRange     '2.0.11',
+445 silly addNameRange     '2.0.12',
+445 silly addNameRange     '2.0.13',
+445 silly addNameRange     '2.0.14',
+445 silly addNameRange     '2.1.0',
+445 silly addNameRange     '2.1.1',
+445 silly addNameRange     '2.1.2',
+445 silly addNameRange     '2.1.3',
+445 silly addNameRange     '2.1.4',
+445 silly addNameRange     '2.1.5',
+445 silly addNameRange     '2.1.6',
+445 silly addNameRange     '2.1.7',
+445 silly addNameRange     '2.1.8',
+445 silly addNameRange     '2.1.9',
+445 silly addNameRange     '2.1.10',
+445 silly addNameRange     '2.1.11' ] ]
+446 silly addNamed mime-types@2.1.11
+447 verbose addNamed "2.1.11" is a plain semver version for mime-types
+448 info retry fetch attempt 1 at 11:08:02
+449 info attempt registry request try #1 at 11:08:02
+450 http fetch GET https://registry.npmjs.org/fd-slicer/-/fd-slicer-1.0.1.tgz
+451 silly mapToRegistry name mime-types
+452 silly mapToRegistry using default registry
+453 silly mapToRegistry registry https://registry.npmjs.org/
+454 silly mapToRegistry uri https://registry.npmjs.org/mime-types
+455 verbose addRemoteTarball https://registry.npmjs.org/mime-types/-/mime-types-2.1.11.tgz not in flight; adding
+456 verbose addRemoteTarball [ 'https://registry.npmjs.org/mime-types/-/mime-types-2.1.11.tgz',
+456 verbose addRemoteTarball   'c259c471bda808a85d6cd193b430a5fae4473b3c' ]
+457 info retry fetch attempt 1 at 11:08:02
+458 info attempt registry request try #1 at 11:08:02
+459 http fetch GET https://registry.npmjs.org/mime-types/-/mime-types-2.1.11.tgz
+460 silly cache afterAdd ee-first@1.1.1
+461 verbose afterAdd C:\Users\Magic-Y\AppData\Roaming\npm-cache\ee-first\1.1.1\package\package.json not in flight; writing
+462 verbose afterAdd C:\Users\Magic-Y\AppData\Roaming\npm-cache\ee-first\1.1.1\package\package.json written
+463 silly install resolved [ { name: 'ee-first',
+463 silly install resolved     description: 'return the first event in a set of ee/event pairs',
+463 silly install resolved     version: '1.1.1',
+463 silly install resolved     author:
+463 silly install resolved      { name: 'Jonathan Ong',
+463 silly install resolved        email: 'me@jongleberry.com',
+463 silly install resolved        url: 'http://jongleberry.com' },
+463 silly install resolved     contributors: [ [Object] ],
+463 silly install resolved     license: 'MIT',
+463 silly install resolved     repository:
+463 silly install resolved      { type: 'git',
+463 silly install resolved        url: 'git+https://github.com/jonathanong/ee-first.git' },
+463 silly install resolved     devDependencies: { istanbul: '0.3.9', mocha: '2.2.5' },
+463 silly install resolved     files: [ 'index.js', 'LICENSE' ],
+463 silly install resolved     scripts:
+463 silly install resolved      { test: 'mocha --reporter spec --bail --check-leaks test/',
+463 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/',
+463 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/' },
+463 silly install resolved     gitHead: '512e0ce4cc3643f603708f965a97b61b1a9c0441',
+463 silly install resolved     bugs: { url: 'https://github.com/jonathanong/ee-first/issues' },
+463 silly install resolved     homepage: 'https://github.com/jonathanong/ee-first',
+463 silly install resolved     _id: 'ee-first@1.1.1',
+463 silly install resolved     _shasum: '590c61156b0ae2f4f0255732a158b266bc56b21d',
+463 silly install resolved     _from: 'ee-first@1.1.1',
+463 silly install resolved     _npmVersion: '1.4.28',
+463 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+463 silly install resolved     maintainers: [ [Object], [Object] ],
+463 silly install resolved     dist:
+463 silly install resolved      { shasum: '590c61156b0ae2f4f0255732a158b266bc56b21d',
+463 silly install resolved        tarball: 'https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz' },
+463 silly install resolved     directories: {},
+463 silly install resolved     _resolved: 'https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz',
+463 silly install resolved     readme: 'ERROR: No README data found!' } ]
+464 info install ee-first@1.1.1 into f:\Movie\node_modules\connect-multiparty\node_modules\on-finished
+465 info installOne ee-first@1.1.1
+466 verbose installOne of ee-first to f:\Movie\node_modules\connect-multiparty\node_modules\on-finished not in flight; installing
+467 verbose lock using C:\Users\Magic-Y\AppData\Roaming\npm-cache\_locks\ee-first-a9151badc479844d.lock for f:\Movie\node_modules\connect-multiparty\node_modules\on-finished\node_modules\ee-first
+468 silly install write writing ee-first 1.1.1 to f:\Movie\node_modules\connect-multiparty\node_modules\on-finished\node_modules\ee-first
+469 verbose unbuild node_modules\connect-multiparty\node_modules\on-finished\node_modules\ee-first
+470 silly gentlyRm f:\Movie\node_modules\connect-multiparty\node_modules\on-finished\node_modules\ee-first is being purged from base f:\Movie
+471 verbose gentlyRm don't care about contents; nuking f:\Movie\node_modules\connect-multiparty\node_modules\on-finished\node_modules\ee-first
+472 verbose tar unpack C:\Users\Magic-Y\AppData\Roaming\npm-cache\ee-first\1.1.1\package.tgz
+473 verbose tar unpacking to f:\Movie\node_modules\connect-multiparty\node_modules\on-finished\node_modules\ee-first
+474 silly gentlyRm f:\Movie\node_modules\connect-multiparty\node_modules\on-finished\node_modules\ee-first is being purged
+475 verbose gentlyRm don't care about contents; nuking f:\Movie\node_modules\connect-multiparty\node_modules\on-finished\node_modules\ee-first
+476 silly gunzTarPerm modes [ '777', '666' ]
+477 silly gunzTarPerm extractEntry package.json
+478 silly gunzTarPerm extractEntry README.md
+479 silly gunzTarPerm extractEntry LICENSE
+480 silly gunzTarPerm extractEntry index.js
+481 verbose write writing to f:\Movie\node_modules\connect-multiparty\node_modules\on-finished\node_modules\ee-first\package.json
+482 info preinstall ee-first@1.1.1
+483 verbose readDependencies loading dependencies from f:\Movie\node_modules\connect-multiparty\node_modules\on-finished\node_modules\ee-first\package.json
+484 verbose readDependencies loading dependencies from f:\Movie\node_modules\connect-multiparty\node_modules\on-finished\node_modules\ee-first\package.json
+485 silly install resolved []
+486 verbose about to build f:\Movie\node_modules\connect-multiparty\node_modules\on-finished\node_modules\ee-first
+487 info build f:\Movie\node_modules\connect-multiparty\node_modules\on-finished\node_modules\ee-first
+488 info linkStuff ee-first@1.1.1
+489 silly linkStuff ee-first@1.1.1 has f:\Movie\node_modules\connect-multiparty\node_modules\on-finished\node_modules as its parent node_modules
+490 verbose linkBins ee-first@1.1.1
+491 verbose linkMans ee-first@1.1.1
+492 verbose rebuildBundles ee-first@1.1.1
+493 info install ee-first@1.1.1
+494 info postinstall ee-first@1.1.1
+495 verbose unlock done using C:\Users\Magic-Y\AppData\Roaming\npm-cache\_locks\ee-first-a9151badc479844d.lock for f:\Movie\node_modules\connect-multiparty\node_modules\on-finished\node_modules\ee-first
+496 verbose about to build f:\Movie\node_modules\connect-multiparty\node_modules\on-finished
+497 info build f:\Movie\node_modules\connect-multiparty\node_modules\on-finished
+498 info linkStuff on-finished@2.3.0
+499 silly linkStuff on-finished@2.3.0 has f:\Movie\node_modules\connect-multiparty\node_modules as its parent node_modules
+500 verbose linkBins on-finished@2.3.0
+501 verbose linkMans on-finished@2.3.0
+502 verbose rebuildBundles on-finished@2.3.0
+503 verbose rebuildBundles [ 'ee-first' ]
+504 info install on-finished@2.3.0
+505 info postinstall on-finished@2.3.0
+506 verbose unlock done using C:\Users\Magic-Y\AppData\Roaming\npm-cache\_locks\on-finished-bc72850d34b1add5.lock for f:\Movie\node_modules\connect-multiparty\node_modules\on-finished
+507 http fetch 200 https://registry.npmjs.org/media-typer/-/media-typer-0.3.0.tgz
+508 silly fetchAndShaCheck shasum 8710d7af0aa626f8fffa1ce00168545263255748
+509 verbose addTmpTarball C:\Users\Magic-Y\AppData\Local\Temp\npm-6744-a53c2253\registry.npmjs.org\media-typer\-\media-typer-0.3.0.tgz not in flight; adding
+510 verbose addTmpTarball already have metadata; skipping unpack for media-typer@0.3.0
+511 silly cache afterAdd media-typer@0.3.0
+512 verbose afterAdd C:\Users\Magic-Y\AppData\Roaming\npm-cache\media-typer\0.3.0\package\package.json not in flight; writing
+513 verbose afterAdd C:\Users\Magic-Y\AppData\Roaming\npm-cache\media-typer\0.3.0\package\package.json written
+514 http fetch 200 https://registry.npmjs.org/fd-slicer/-/fd-slicer-1.0.1.tgz
+515 silly fetchAndShaCheck shasum 8b5bcbd9ec327c5041bf9ab023fd6750f1177e65
+516 verbose addTmpTarball C:\Users\Magic-Y\AppData\Local\Temp\npm-6744-a53c2253\registry.npmjs.org\fd-slicer\-\fd-slicer-1.0.1.tgz not in flight; adding
+517 verbose addTmpTarball already have metadata; skipping unpack for fd-slicer@1.0.1
+518 silly cache afterAdd fd-slicer@1.0.1
+519 verbose afterAdd C:\Users\Magic-Y\AppData\Roaming\npm-cache\fd-slicer\1.0.1\package\package.json not in flight; writing
+520 verbose afterAdd C:\Users\Magic-Y\AppData\Roaming\npm-cache\fd-slicer\1.0.1\package\package.json written
+521 silly install resolved [ { name: 'fd-slicer',
+521 silly install resolved     version: '1.0.1',
+521 silly install resolved     description: 'safely create multiple ReadStream or WriteStream objects from the same file descriptor',
+521 silly install resolved     main: 'index.js',
+521 silly install resolved     scripts:
+521 silly install resolved      { test: 'mocha --reporter spec --check-leaks',
+521 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/test.js',
+521 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --timeout 10000 --reporter spec --check-leaks test/test.js' },
+521 silly install resolved     author: { name: 'Andrew Kelley', email: 'superjoe30@gmail.com' },
+521 silly install resolved     license: 'MIT',
+521 silly install resolved     devDependencies:
+521 silly install resolved      { istanbul: '~0.3.3',
+521 silly install resolved        mocha: '~2.0.1',
+521 silly install resolved        'stream-equal': '~0.1.5',
+521 silly install resolved        streamsink: '~1.2.0' },
+521 silly install resolved     dependencies: { pend: '~1.2.0' },
+521 silly install resolved     directories: { test: 'test' },
+521 silly install resolved     repository:
+521 silly install resolved      { type: 'git',
+521 silly install resolved        url: 'git://github.com/andrewrk/node-fd-slicer.git' },
+521 silly install resolved     bugs: { url: 'https://github.com/andrewrk/node-fd-slicer/issues' },
+521 silly install resolved     keywords: [ 'createReadStream', 'createWriteStream' ],
+521 silly install resolved     gitHead: 'b7a28cb5bda986748ad756c39961f46c2fd28ec6',
+521 silly install resolved     _id: 'fd-slicer@1.0.1',
+521 silly install resolved     _shasum: '8b5bcbd9ec327c5041bf9ab023fd6750f1177e65',
+521 silly install resolved     _from: 'fd-slicer@>=1.0.0 <1.1.0',
+521 silly install resolved     _npmVersion: '1.4.21',
+521 silly install resolved     _npmUser: { name: 'superjoe', email: 'superjoe30@gmail.com' },
+521 silly install resolved     maintainers: [ [Object], [Object] ],
+521 silly install resolved     dist:
+521 silly install resolved      { shasum: '8b5bcbd9ec327c5041bf9ab023fd6750f1177e65',
+521 silly install resolved        tarball: 'https://registry.npmjs.org/fd-slicer/-/fd-slicer-1.0.1.tgz' },
+521 silly install resolved     _resolved: 'https://registry.npmjs.org/fd-slicer/-/fd-slicer-1.0.1.tgz' } ]
+522 info install fd-slicer@1.0.1 into f:\Movie\node_modules\connect-multiparty\node_modules\multiparty
+523 info installOne fd-slicer@1.0.1
+524 verbose installOne of fd-slicer to f:\Movie\node_modules\connect-multiparty\node_modules\multiparty not in flight; installing
+525 http fetch 200 https://registry.npmjs.org/mime-types/-/mime-types-2.1.11.tgz
+526 silly fetchAndShaCheck shasum c259c471bda808a85d6cd193b430a5fae4473b3c
+527 verbose addTmpTarball C:\Users\Magic-Y\AppData\Local\Temp\npm-6744-a53c2253\registry.npmjs.org\mime-types\-\mime-types-2.1.11.tgz not in flight; adding
+528 verbose addTmpTarball already have metadata; skipping unpack for mime-types@2.1.11
+529 verbose lock using C:\Users\Magic-Y\AppData\Roaming\npm-cache\_locks\fd-slicer-5d1ef851d4a782d7.lock for f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\node_modules\fd-slicer
+530 silly install write writing fd-slicer 1.0.1 to f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\node_modules\fd-slicer
+531 silly cache afterAdd mime-types@2.1.11
+532 verbose afterAdd C:\Users\Magic-Y\AppData\Roaming\npm-cache\mime-types\2.1.11\package\package.json not in flight; writing
+533 verbose unbuild node_modules\connect-multiparty\node_modules\multiparty\node_modules\fd-slicer
+534 silly gentlyRm f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\node_modules\fd-slicer is being purged from base f:\Movie
+535 verbose gentlyRm don't care about contents; nuking f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\node_modules\fd-slicer
+536 verbose tar unpack C:\Users\Magic-Y\AppData\Roaming\npm-cache\fd-slicer\1.0.1\package.tgz
+537 verbose tar unpacking to f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\node_modules\fd-slicer
+538 silly gentlyRm f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\node_modules\fd-slicer is being purged
+539 verbose gentlyRm don't care about contents; nuking f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\node_modules\fd-slicer
+540 silly gunzTarPerm modes [ '777', '666' ]
+541 verbose afterAdd C:\Users\Magic-Y\AppData\Roaming\npm-cache\mime-types\2.1.11\package\package.json written
+542 silly install resolved [ { name: 'media-typer',
+542 silly install resolved     description: 'Simple RFC 6838 media type parser and formatter',
+542 silly install resolved     version: '0.3.0',
+542 silly install resolved     author:
+542 silly install resolved      { name: 'Douglas Christopher Wilson',
+542 silly install resolved        email: 'doug@somethingdoug.com' },
+542 silly install resolved     license: 'MIT',
+542 silly install resolved     repository: { type: 'git', url: 'https://github.com/jshttp/media-typer' },
+542 silly install resolved     devDependencies: { istanbul: '0.3.2', mocha: '~1.21.4', should: '~4.0.4' },
+542 silly install resolved     files: [ 'LICENSE', 'HISTORY.md', 'index.js' ],
+542 silly install resolved     engines: { node: '>= 0.6' },
+542 silly install resolved     scripts:
+542 silly install resolved      { test: 'mocha --reporter spec --check-leaks --bail test/',
+542 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/',
+542 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/' },
+542 silly install resolved     gitHead: 'd49d41ffd0bb5a0655fa44a59df2ec0bfc835b16',
+542 silly install resolved     bugs: { url: 'https://github.com/jshttp/media-typer/issues' },
+542 silly install resolved     homepage: 'https://github.com/jshttp/media-typer',
+542 silly install resolved     _id: 'media-typer@0.3.0',
+542 silly install resolved     _shasum: '8710d7af0aa626f8fffa1ce00168545263255748',
+542 silly install resolved     _from: 'media-typer@0.3.0',
+542 silly install resolved     _npmVersion: '1.4.21',
+542 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+542 silly install resolved     maintainers: [ [Object] ],
+542 silly install resolved     dist:
+542 silly install resolved      { shasum: '8710d7af0aa626f8fffa1ce00168545263255748',
+542 silly install resolved        tarball: 'https://registry.npmjs.org/media-typer/-/media-typer-0.3.0.tgz' },
+542 silly install resolved     directories: {},
+542 silly install resolved     _resolved: 'https://registry.npmjs.org/media-typer/-/media-typer-0.3.0.tgz' },
+542 silly install resolved   { name: 'mime-types',
+542 silly install resolved     description: 'The ultimate javascript content-type utility.',
+542 silly install resolved     version: '2.1.11',
+542 silly install resolved     contributors: [ [Object], [Object], [Object] ],
+542 silly install resolved     license: 'MIT',
+542 silly install resolved     keywords: [ 'mime', 'types' ],
+542 silly install resolved     repository:
+542 silly install resolved      { type: 'git',
+542 silly install resolved        url: 'git+https://github.com/jshttp/mime-types.git' },
+542 silly install resolved     dependencies: { 'mime-db': '~1.23.0' },
+542 silly install resolved     devDependencies: { istanbul: '0.4.3', mocha: '1.21.5' },
+542 silly install resolved     files: [ 'HISTORY.md', 'LICENSE', 'index.js' ],
+542 silly install resolved     engines: { node: '>= 0.6' },
+542 silly install resolved     scripts:
+542 silly install resolved      { test: 'mocha --reporter spec test/test.js',
+542 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot test/test.js',
+542 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter dot test/test.js' },
+542 silly install resolved     gitHead: '298ffcf490a5d6e60edea7bf7a69036df04846b1',
+542 silly install resolved     bugs: { url: 'https://github.com/jshttp/mime-types/issues' },
+542 silly install resolved     homepage: 'https://github.com/jshttp/mime-types#readme',
+542 silly install resolved     _id: 'mime-types@2.1.11',
+542 silly install resolved     _shasum: 'c259c471bda808a85d6cd193b430a5fae4473b3c',
+542 silly install resolved     _from: 'mime-types@>=2.1.10 <2.2.0',
+542 silly install resolved     _npmVersion: '2.15.1',
+542 silly install resolved     _nodeVersion: '4.4.3',
+542 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+542 silly install resolved     dist:
+542 silly install resolved      { shasum: 'c259c471bda808a85d6cd193b430a5fae4473b3c',
+542 silly install resolved        tarball: 'https://registry.npmjs.org/mime-types/-/mime-types-2.1.11.tgz' },
+542 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+542 silly install resolved     _npmOperationalInternal:
+542 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+542 silly install resolved        tmp: 'tmp/mime-types-2.1.11.tgz_1462165365027_0.7217204745393246' },
+542 silly install resolved     directories: {},
+542 silly install resolved     _resolved: 'https://registry.npmjs.org/mime-types/-/mime-types-2.1.11.tgz' } ]
+543 info install media-typer@0.3.0 into f:\Movie\node_modules\connect-multiparty\node_modules\type-is
+544 info install mime-types@2.1.11 into f:\Movie\node_modules\connect-multiparty\node_modules\type-is
+545 info installOne media-typer@0.3.0
+546 verbose installOne of media-typer to f:\Movie\node_modules\connect-multiparty\node_modules\type-is not in flight; installing
+547 info installOne mime-types@2.1.11
+548 verbose installOne of mime-types to f:\Movie\node_modules\connect-multiparty\node_modules\type-is not in flight; installing
+549 silly gunzTarPerm extractEntry package.json
+550 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+551 verbose lock using C:\Users\Magic-Y\AppData\Roaming\npm-cache\_locks\media-typer-d781d768e7732924.lock for f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\media-typer
+552 verbose lock using C:\Users\Magic-Y\AppData\Roaming\npm-cache\_locks\mime-types-0b66827c88a94403.lock for f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\mime-types
+553 silly install write writing media-typer 0.3.0 to f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\media-typer
+554 silly install write writing mime-types 2.1.11 to f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\mime-types
+555 silly gunzTarPerm extractEntry .npmignore
+556 silly gunzTarPerm modified mode [ '.npmignore', 436, 438 ]
+557 silly gunzTarPerm extractEntry README.md
+558 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+559 verbose unbuild node_modules\connect-multiparty\node_modules\type-is\node_modules\media-typer
+560 verbose unbuild node_modules\connect-multiparty\node_modules\type-is\node_modules\mime-types
+561 silly gentlyRm f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\media-typer is being purged from base f:\Movie
+562 verbose gentlyRm don't care about contents; nuking f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\media-typer
+563 silly gentlyRm f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\mime-types is being purged from base f:\Movie
+564 verbose gentlyRm don't care about contents; nuking f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\mime-types
+565 verbose tar unpack C:\Users\Magic-Y\AppData\Roaming\npm-cache\media-typer\0.3.0\package.tgz
+566 verbose tar unpacking to f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\media-typer
+567 silly gentlyRm f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\media-typer is being purged
+568 verbose gentlyRm don't care about contents; nuking f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\media-typer
+569 verbose tar unpack C:\Users\Magic-Y\AppData\Roaming\npm-cache\mime-types\2.1.11\package.tgz
+570 verbose tar unpacking to f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\mime-types
+571 silly gentlyRm f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\mime-types is being purged
+572 verbose gentlyRm don't care about contents; nuking f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\mime-types
+573 silly gunzTarPerm modes [ '777', '666' ]
+574 silly gunzTarPerm modes [ '777', '666' ]
+575 silly gunzTarPerm extractEntry LICENSE
+576 silly gunzTarPerm modified mode [ 'LICENSE', 436, 438 ]
+577 silly gunzTarPerm extractEntry index.js
+578 silly gunzTarPerm modified mode [ 'index.js', 436, 438 ]
+579 silly gunzTarPerm extractEntry package.json
+580 silly gunzTarPerm extractEntry package.json
+581 silly gunzTarPerm extractEntry README.md
+582 silly gunzTarPerm extractEntry LICENSE
+583 silly gunzTarPerm extractEntry README.md
+584 silly gunzTarPerm extractEntry LICENSE
+585 silly gunzTarPerm extractEntry .travis.yml
+586 silly gunzTarPerm modified mode [ '.travis.yml', 436, 438 ]
+587 silly gunzTarPerm extractEntry index.js
+588 silly gunzTarPerm extractEntry HISTORY.md
+589 silly gunzTarPerm extractEntry index.js
+590 silly gunzTarPerm extractEntry HISTORY.md
+591 silly gunzTarPerm extractEntry CHANGELOG.md
+592 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 438 ]
+593 silly gunzTarPerm extractEntry test/test.js
+594 silly gunzTarPerm modified mode [ 'test/test.js', 436, 438 ]
+595 verbose write writing to f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\media-typer\package.json
+596 verbose write writing to f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\mime-types\package.json
+597 verbose write writing to f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\node_modules\fd-slicer\package.json
+598 info preinstall media-typer@0.3.0
+599 info preinstall mime-types@2.1.11
+600 verbose readDependencies loading dependencies from f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\media-typer\package.json
+601 verbose readDependencies loading dependencies from f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\mime-types\package.json
+602 info preinstall fd-slicer@1.0.1
+603 verbose readDependencies loading dependencies from f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\node_modules\fd-slicer\package.json
+604 verbose readDependencies loading dependencies from f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\media-typer\package.json
+605 silly prepareForInstallMany adding mime-db@~1.23.0 from mime-types dependencies
+606 verbose readDependencies loading dependencies from f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\mime-types\package.json
+607 silly prepareForInstallMany adding pend@~1.2.0 from fd-slicer dependencies
+608 verbose readDependencies loading dependencies from f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\node_modules\fd-slicer\package.json
+609 silly install resolved []
+610 verbose about to build f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\media-typer
+611 info build f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\media-typer
+612 silly cache add args [ 'mime-db@~1.23.0', null ]
+613 verbose cache add spec mime-db@~1.23.0
+614 silly cache add parsed spec Result {
+614 silly cache add   raw: 'mime-db@~1.23.0',
+614 silly cache add   scope: null,
+614 silly cache add   name: 'mime-db',
+614 silly cache add   rawSpec: '~1.23.0',
+614 silly cache add   spec: '>=1.23.0 <1.24.0',
+614 silly cache add   type: 'range' }
+615 silly addNamed mime-db@>=1.23.0 <1.24.0
+616 verbose addNamed ">=1.23.0 <1.24.0" is a valid semver range for mime-db
+617 silly addNameRange { name: 'mime-db', range: '>=1.23.0 <1.24.0', hasData: false }
+618 silly mapToRegistry name mime-db
+619 silly mapToRegistry using default registry
+620 silly mapToRegistry registry https://registry.npmjs.org/
+621 silly mapToRegistry uri https://registry.npmjs.org/mime-db
+622 verbose addNameRange registry:https://registry.npmjs.org/mime-db not in flight; fetching
+623 info linkStuff media-typer@0.3.0
+624 silly linkStuff media-typer@0.3.0 has f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules as its parent node_modules
+625 silly cache add args [ 'pend@~1.2.0', null ]
+626 verbose cache add spec pend@~1.2.0
+627 silly cache add parsed spec Result {
+627 silly cache add   raw: 'pend@~1.2.0',
+627 silly cache add   scope: null,
+627 silly cache add   name: 'pend',
+627 silly cache add   rawSpec: '~1.2.0',
+627 silly cache add   spec: '>=1.2.0 <1.3.0',
+627 silly cache add   type: 'range' }
+628 silly addNamed pend@>=1.2.0 <1.3.0
+629 verbose addNamed ">=1.2.0 <1.3.0" is a valid semver range for pend
+630 silly addNameRange { name: 'pend', range: '>=1.2.0 <1.3.0', hasData: false }
+631 silly mapToRegistry name pend
+632 silly mapToRegistry using default registry
+633 silly mapToRegistry registry https://registry.npmjs.org/
+634 silly mapToRegistry uri https://registry.npmjs.org/pend
+635 verbose addNameRange registry:https://registry.npmjs.org/pend not in flight; fetching
+636 verbose linkBins media-typer@0.3.0
+637 verbose linkMans media-typer@0.3.0
+638 verbose rebuildBundles media-typer@0.3.0
+639 info install media-typer@0.3.0
+640 info postinstall media-typer@0.3.0
+641 verbose unlock done using C:\Users\Magic-Y\AppData\Roaming\npm-cache\_locks\media-typer-d781d768e7732924.lock for f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\media-typer
+642 verbose request uri https://registry.npmjs.org/pend
+643 verbose request no auth needed
+644 info attempt registry request try #1 at 11:08:03
+645 http request GET https://registry.npmjs.org/pend
+646 verbose request uri https://registry.npmjs.org/mime-db
+647 verbose request no auth needed
+648 info attempt registry request try #1 at 11:08:03
+649 verbose etag "4ZOAOLAHIYYKUM9DZFCOAI1T1"
+650 http request GET https://registry.npmjs.org/mime-db
+651 http 200 https://registry.npmjs.org/pend
+652 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+652 verbose headers   etag: '"B01QD0I6E1KGWF1NSNV3BEPE2"',
+652 verbose headers   'content-type': 'application/json',
+652 verbose headers   'content-encoding': 'gzip',
+652 verbose headers   'cache-control': 'max-age=300',
+652 verbose headers   'content-length': '1520',
+652 verbose headers   'accept-ranges': 'bytes',
+652 verbose headers   date: 'Fri, 06 May 2016 03:08:06 GMT',
+652 verbose headers   via: '1.1 varnish',
+652 verbose headers   age: '248',
+652 verbose headers   connection: 'keep-alive',
+652 verbose headers   'x-served-by': 'cache-ams4128-AMS',
+652 verbose headers   'x-cache': 'HIT',
+652 verbose headers   'x-cache-hits': '2',
+652 verbose headers   'x-timer': 'S1462504086.560171,VS0,VE0',
+652 verbose headers   vary: 'Accept-Encoding' }
+653 silly get cb [ 200,
+653 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+653 silly get     etag: '"B01QD0I6E1KGWF1NSNV3BEPE2"',
+653 silly get     'content-type': 'application/json',
+653 silly get     'content-encoding': 'gzip',
+653 silly get     'cache-control': 'max-age=300',
+653 silly get     'content-length': '1520',
+653 silly get     'accept-ranges': 'bytes',
+653 silly get     date: 'Fri, 06 May 2016 03:08:06 GMT',
+653 silly get     via: '1.1 varnish',
+653 silly get     age: '248',
+653 silly get     connection: 'keep-alive',
+653 silly get     'x-served-by': 'cache-ams4128-AMS',
+653 silly get     'x-cache': 'HIT',
+653 silly get     'x-cache-hits': '2',
+653 silly get     'x-timer': 'S1462504086.560171,VS0,VE0',
+653 silly get     vary: 'Accept-Encoding' } ]
+654 verbose get saving pend to C:\Users\Magic-Y\AppData\Roaming\npm-cache\registry.npmjs.org\pend\.cache.json
+655 silly addNameRange number 2 { name: 'pend', range: '>=1.2.0 <1.3.0', hasData: true }
+656 silly addNameRange versions [ 'pend',
+656 silly addNameRange   [ '1.0.0', '1.1.0', '1.1.1', '1.1.2', '1.1.3', '1.2.0' ] ]
+657 silly addNamed pend@1.2.0
+658 verbose addNamed "1.2.0" is a plain semver version for pend
+659 http 200 https://registry.npmjs.org/mime-db
+660 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+660 verbose headers   etag: '"DE1E5EXFAKV0S1L2M4PVTQ4O1"',
+660 verbose headers   'content-type': 'application/json',
+660 verbose headers   'content-encoding': 'gzip',
+660 verbose headers   'cache-control': 'max-age=300',
+660 verbose headers   'content-length': '7618',
+660 verbose headers   'accept-ranges': 'bytes',
+660 verbose headers   date: 'Fri, 06 May 2016 03:08:06 GMT',
+660 verbose headers   via: '1.1 varnish',
+660 verbose headers   age: '184',
+660 verbose headers   connection: 'keep-alive',
+660 verbose headers   'x-served-by': 'cache-ams4142-AMS',
+660 verbose headers   'x-cache': 'HIT',
+660 verbose headers   'x-cache-hits': '3',
+660 verbose headers   'x-timer': 'S1462504086.565163,VS0,VE0',
+660 verbose headers   vary: 'Accept-Encoding' }
+661 silly get cb [ 200,
+661 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+661 silly get     etag: '"DE1E5EXFAKV0S1L2M4PVTQ4O1"',
+661 silly get     'content-type': 'application/json',
+661 silly get     'content-encoding': 'gzip',
+661 silly get     'cache-control': 'max-age=300',
+661 silly get     'content-length': '7618',
+661 silly get     'accept-ranges': 'bytes',
+661 silly get     date: 'Fri, 06 May 2016 03:08:06 GMT',
+661 silly get     via: '1.1 varnish',
+661 silly get     age: '184',
+661 silly get     connection: 'keep-alive',
+661 silly get     'x-served-by': 'cache-ams4142-AMS',
+661 silly get     'x-cache': 'HIT',
+661 silly get     'x-cache-hits': '3',
+661 silly get     'x-timer': 'S1462504086.565163,VS0,VE0',
+661 silly get     vary: 'Accept-Encoding' } ]
+662 verbose get saving mime-db to C:\Users\Magic-Y\AppData\Roaming\npm-cache\registry.npmjs.org\mime-db\.cache.json
+663 silly mapToRegistry name pend
+664 silly mapToRegistry using default registry
+665 silly mapToRegistry registry https://registry.npmjs.org/
+666 silly mapToRegistry uri https://registry.npmjs.org/pend
+667 verbose addRemoteTarball https://registry.npmjs.org/pend/-/pend-1.2.0.tgz not in flight; adding
+668 verbose addRemoteTarball [ 'https://registry.npmjs.org/pend/-/pend-1.2.0.tgz',
+668 verbose addRemoteTarball   '7a57eb550a6783f9115331fcf4663d5c8e007a50' ]
+669 info retry fetch attempt 1 at 11:08:04
+670 info attempt registry request try #1 at 11:08:04
+671 http fetch GET https://registry.npmjs.org/pend/-/pend-1.2.0.tgz
+672 silly addNameRange number 2 { name: 'mime-db', range: '>=1.23.0 <1.24.0', hasData: true }
+673 silly addNameRange versions [ 'mime-db',
+673 silly addNameRange   [ '0.0.0',
+673 silly addNameRange     '1.0.0',
+673 silly addNameRange     '1.0.1',
+673 silly addNameRange     '1.0.2',
+673 silly addNameRange     '1.0.3',
+673 silly addNameRange     '1.1.0',
+673 silly addNameRange     '1.1.1',
+673 silly addNameRange     '1.1.2',
+673 silly addNameRange     '1.2.0',
+673 silly addNameRange     '1.3.0',
+673 silly addNameRange     '1.3.1',
+673 silly addNameRange     '1.4.0',
+673 silly addNameRange     '1.5.0',
+673 silly addNameRange     '1.6.0',
+673 silly addNameRange     '1.6.1',
+673 silly addNameRange     '1.7.0',
+673 silly addNameRange     '1.8.0',
+673 silly addNameRange     '1.9.0',
+673 silly addNameRange     '1.9.1',
+673 silly addNameRange     '1.10.0',
+673 silly addNameRange     '1.11.0',
+673 silly addNameRange     '1.12.0',
+673 silly addNameRange     '1.13.0',
+673 silly addNameRange     '1.14.0',
+673 silly addNameRange     '1.15.0',
+673 silly addNameRange     '1.16.0',
+673 silly addNameRange     '1.17.0',
+673 silly addNameRange     '1.18.0',
+673 silly addNameRange     '1.19.0',
+673 silly addNameRange     '1.20.0',
+673 silly addNameRange     '1.21.0',
+673 silly addNameRange     '1.22.0',
+673 silly addNameRange     '1.23.0' ] ]
+674 silly addNamed mime-db@1.23.0
+675 verbose addNamed "1.23.0" is a plain semver version for mime-db
+676 silly mapToRegistry name mime-db
+677 silly mapToRegistry using default registry
+678 silly mapToRegistry registry https://registry.npmjs.org/
+679 silly mapToRegistry uri https://registry.npmjs.org/mime-db
+680 verbose addRemoteTarball https://registry.npmjs.org/mime-db/-/mime-db-1.23.0.tgz not in flight; adding
+681 verbose addRemoteTarball [ 'https://registry.npmjs.org/mime-db/-/mime-db-1.23.0.tgz',
+681 verbose addRemoteTarball   'a31b4070adaea27d732ea333740a64d0ec9a6659' ]
+682 info retry fetch attempt 1 at 11:08:04
+683 info attempt registry request try #1 at 11:08:04
+684 http fetch GET https://registry.npmjs.org/mime-db/-/mime-db-1.23.0.tgz
+685 http fetch 200 https://registry.npmjs.org/pend/-/pend-1.2.0.tgz
+686 silly fetchAndShaCheck shasum 7a57eb550a6783f9115331fcf4663d5c8e007a50
+687 verbose addTmpTarball C:\Users\Magic-Y\AppData\Local\Temp\npm-6744-a53c2253\registry.npmjs.org\pend\-\pend-1.2.0.tgz not in flight; adding
+688 verbose addTmpTarball already have metadata; skipping unpack for pend@1.2.0
+689 silly cache afterAdd pend@1.2.0
+690 verbose afterAdd C:\Users\Magic-Y\AppData\Roaming\npm-cache\pend\1.2.0\package\package.json not in flight; writing
+691 verbose afterAdd C:\Users\Magic-Y\AppData\Roaming\npm-cache\pend\1.2.0\package\package.json written
+692 silly install resolved [ { name: 'pend',
+692 silly install resolved     version: '1.2.0',
+692 silly install resolved     description: 'dead-simple optimistic async helper',
+692 silly install resolved     main: 'index.js',
+692 silly install resolved     scripts: { test: 'node test.js' },
+692 silly install resolved     author: { name: 'Andrew Kelley', email: 'superjoe30@gmail.com' },
+692 silly install resolved     license: 'MIT',
+692 silly install resolved     repository: { type: 'git', url: 'git://github.com/andrewrk/node-pend.git' },
+692 silly install resolved     bugs: { url: 'https://github.com/andrewrk/node-pend/issues' },
+692 silly install resolved     gitHead: 'ed57bbe8520518dca24d0c6bb847ffb6b68ae6f9',
+692 silly install resolved     _id: 'pend@1.2.0',
+692 silly install resolved     _shasum: '7a57eb550a6783f9115331fcf4663d5c8e007a50',
+692 silly install resolved     _from: 'pend@>=1.2.0 <1.3.0',
+692 silly install resolved     _npmVersion: '1.4.21',
+692 silly install resolved     _npmUser: { name: 'superjoe', email: 'superjoe30@gmail.com' },
+692 silly install resolved     maintainers: [ [Object] ],
+692 silly install resolved     dist:
+692 silly install resolved      { shasum: '7a57eb550a6783f9115331fcf4663d5c8e007a50',
+692 silly install resolved        tarball: 'https://registry.npmjs.org/pend/-/pend-1.2.0.tgz' },
+692 silly install resolved     directories: {},
+692 silly install resolved     _resolved: 'https://registry.npmjs.org/pend/-/pend-1.2.0.tgz' } ]
+693 info install pend@1.2.0 into f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\node_modules\fd-slicer
+694 info installOne pend@1.2.0
+695 verbose installOne of pend to f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\node_modules\fd-slicer not in flight; installing
+696 verbose lock using C:\Users\Magic-Y\AppData\Roaming\npm-cache\_locks\pend-f3a11a87998725e6.lock for f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\node_modules\fd-slicer\node_modules\pend
+697 silly install write writing pend 1.2.0 to f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\node_modules\fd-slicer\node_modules\pend
+698 verbose unbuild node_modules\connect-multiparty\node_modules\multiparty\node_modules\fd-slicer\node_modules\pend
+699 silly gentlyRm f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\node_modules\fd-slicer\node_modules\pend is being purged from base f:\Movie
+700 verbose gentlyRm don't care about contents; nuking f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\node_modules\fd-slicer\node_modules\pend
+701 verbose tar unpack C:\Users\Magic-Y\AppData\Roaming\npm-cache\pend\1.2.0\package.tgz
+702 verbose tar unpacking to f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\node_modules\fd-slicer\node_modules\pend
+703 silly gentlyRm f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\node_modules\fd-slicer\node_modules\pend is being purged
+704 verbose gentlyRm don't care about contents; nuking f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\node_modules\fd-slicer\node_modules\pend
+705 silly gunzTarPerm modes [ '777', '666' ]
+706 silly gunzTarPerm extractEntry package.json
+707 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+708 silly gunzTarPerm extractEntry README.md
+709 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+710 silly gunzTarPerm extractEntry LICENSE
+711 silly gunzTarPerm modified mode [ 'LICENSE', 436, 438 ]
+712 silly gunzTarPerm extractEntry index.js
+713 silly gunzTarPerm modified mode [ 'index.js', 436, 438 ]
+714 silly gunzTarPerm extractEntry test.js
+715 silly gunzTarPerm modified mode [ 'test.js', 436, 438 ]
+716 verbose write writing to f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\node_modules\fd-slicer\node_modules\pend\package.json
+717 info preinstall pend@1.2.0
+718 verbose readDependencies loading dependencies from f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\node_modules\fd-slicer\node_modules\pend\package.json
+719 verbose readDependencies loading dependencies from f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\node_modules\fd-slicer\node_modules\pend\package.json
+720 silly install resolved []
+721 verbose about to build f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\node_modules\fd-slicer\node_modules\pend
+722 info build f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\node_modules\fd-slicer\node_modules\pend
+723 info linkStuff pend@1.2.0
+724 silly linkStuff pend@1.2.0 has f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\node_modules\fd-slicer\node_modules as its parent node_modules
+725 verbose linkBins pend@1.2.0
+726 verbose linkMans pend@1.2.0
+727 verbose rebuildBundles pend@1.2.0
+728 info install pend@1.2.0
+729 info postinstall pend@1.2.0
+730 verbose unlock done using C:\Users\Magic-Y\AppData\Roaming\npm-cache\_locks\pend-f3a11a87998725e6.lock for f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\node_modules\fd-slicer\node_modules\pend
+731 verbose about to build f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\node_modules\fd-slicer
+732 info build f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\node_modules\fd-slicer
+733 info linkStuff fd-slicer@1.0.1
+734 silly linkStuff fd-slicer@1.0.1 has f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\node_modules as its parent node_modules
+735 verbose linkBins fd-slicer@1.0.1
+736 verbose linkMans fd-slicer@1.0.1
+737 verbose rebuildBundles fd-slicer@1.0.1
+738 verbose rebuildBundles [ 'pend' ]
+739 info install fd-slicer@1.0.1
+740 info postinstall fd-slicer@1.0.1
+741 verbose unlock done using C:\Users\Magic-Y\AppData\Roaming\npm-cache\_locks\fd-slicer-5d1ef851d4a782d7.lock for f:\Movie\node_modules\connect-multiparty\node_modules\multiparty\node_modules\fd-slicer
+742 verbose about to build f:\Movie\node_modules\connect-multiparty\node_modules\multiparty
+743 info build f:\Movie\node_modules\connect-multiparty\node_modules\multiparty
+744 info linkStuff multiparty@4.1.2
+745 silly linkStuff multiparty@4.1.2 has f:\Movie\node_modules\connect-multiparty\node_modules as its parent node_modules
+746 verbose linkBins multiparty@4.1.2
+747 verbose linkMans multiparty@4.1.2
+748 verbose rebuildBundles multiparty@4.1.2
+749 verbose rebuildBundles [ 'fd-slicer' ]
+750 info install multiparty@4.1.2
+751 info postinstall multiparty@4.1.2
+752 verbose unlock done using C:\Users\Magic-Y\AppData\Roaming\npm-cache\_locks\multiparty-65341f8e3848fb1e.lock for f:\Movie\node_modules\connect-multiparty\node_modules\multiparty
+753 http fetch 200 https://registry.npmjs.org/mime-db/-/mime-db-1.23.0.tgz
+754 silly fetchAndShaCheck shasum a31b4070adaea27d732ea333740a64d0ec9a6659
+755 verbose addTmpTarball C:\Users\Magic-Y\AppData\Local\Temp\npm-6744-a53c2253\registry.npmjs.org\mime-db\-\mime-db-1.23.0.tgz not in flight; adding
+756 verbose addTmpTarball already have metadata; skipping unpack for mime-db@1.23.0
+757 silly cache afterAdd mime-db@1.23.0
+758 verbose afterAdd C:\Users\Magic-Y\AppData\Roaming\npm-cache\mime-db\1.23.0\package\package.json not in flight; writing
+759 verbose afterAdd C:\Users\Magic-Y\AppData\Roaming\npm-cache\mime-db\1.23.0\package\package.json written
+760 silly install resolved [ { name: 'mime-db',
+760 silly install resolved     description: 'Media Type Database',
+760 silly install resolved     version: '1.23.0',
+760 silly install resolved     contributors: [ [Object], [Object], [Object] ],
+760 silly install resolved     license: 'MIT',
+760 silly install resolved     keywords: [ 'mime', 'db', 'type', 'types', 'database', 'charset', 'charsets' ],
+760 silly install resolved     repository:
+760 silly install resolved      { type: 'git',
+760 silly install resolved        url: 'git+https://github.com/jshttp/mime-db.git' },
+760 silly install resolved     devDependencies:
+760 silly install resolved      { bluebird: '3.3.5',
+760 silly install resolved        co: '4.6.0',
+760 silly install resolved        cogent: '1.0.1',
+760 silly install resolved        'csv-parse': '1.1.0',
+760 silly install resolved        gnode: '0.1.2',
+760 silly install resolved        istanbul: '0.4.3',
+760 silly install resolved        mocha: '1.21.5',
+760 silly install resolved        'raw-body': '2.1.6',
+760 silly install resolved        'stream-to-array': '2.3.0' },
+760 silly install resolved     files: [ 'HISTORY.md', 'LICENSE', 'README.md', 'db.json', 'index.js' ],
+760 silly install resolved     engines: { node: '>= 0.6' },
+760 silly install resolved     scripts:
+760 silly install resolved      { build: 'node scripts/build',
+760 silly install resolved        fetch: 'gnode scripts/fetch-apache && gnode scripts/fetch-iana && gnode scripts/fetch-nginx',
+760 silly install resolved        test: 'mocha --reporter spec --bail --check-leaks test/',
+760 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/',
+760 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/',
+760 silly install resolved        update: 'npm run fetch && npm run build' },
+760 silly install resolved     gitHead: 'ba0d99fd05b3bfdc2ebcd78f858c25cb7db6af41',
+760 silly install resolved     bugs: { url: 'https://github.com/jshttp/mime-db/issues' },
+760 silly install resolved     homepage: 'https://github.com/jshttp/mime-db#readme',
+760 silly install resolved     _id: 'mime-db@1.23.0',
+760 silly install resolved     _shasum: 'a31b4070adaea27d732ea333740a64d0ec9a6659',
+760 silly install resolved     _from: 'mime-db@>=1.23.0 <1.24.0',
+760 silly install resolved     _npmVersion: '2.15.1',
+760 silly install resolved     _nodeVersion: '4.4.3',
+760 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+760 silly install resolved     dist:
+760 silly install resolved      { shasum: 'a31b4070adaea27d732ea333740a64d0ec9a6659',
+760 silly install resolved        tarball: 'https://registry.npmjs.org/mime-db/-/mime-db-1.23.0.tgz' },
+760 silly install resolved     maintainers: [ [Object], [Object] ],
+760 silly install resolved     _npmOperationalInternal:
+760 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+760 silly install resolved        tmp: 'tmp/mime-db-1.23.0.tgz_1462163798086_0.43938886746764183' },
+760 silly install resolved     directories: {},
+760 silly install resolved     _resolved: 'https://registry.npmjs.org/mime-db/-/mime-db-1.23.0.tgz' } ]
+761 info install mime-db@1.23.0 into f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\mime-types
+762 info installOne mime-db@1.23.0
+763 verbose installOne of mime-db to f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\mime-types not in flight; installing
+764 verbose lock using C:\Users\Magic-Y\AppData\Roaming\npm-cache\_locks\mime-db-7680f742182cd1ab.lock for f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\mime-types\node_modules\mime-db
+765 silly install write writing mime-db 1.23.0 to f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\mime-types\node_modules\mime-db
+766 verbose unbuild node_modules\connect-multiparty\node_modules\type-is\node_modules\mime-types\node_modules\mime-db
+767 silly gentlyRm f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\mime-types\node_modules\mime-db is being purged from base f:\Movie
+768 verbose gentlyRm don't care about contents; nuking f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\mime-types\node_modules\mime-db
+769 verbose tar unpack C:\Users\Magic-Y\AppData\Roaming\npm-cache\mime-db\1.23.0\package.tgz
+770 verbose tar unpacking to f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\mime-types\node_modules\mime-db
+771 silly gentlyRm f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\mime-types\node_modules\mime-db is being purged
+772 verbose gentlyRm don't care about contents; nuking f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\mime-types\node_modules\mime-db
+773 silly gunzTarPerm modes [ '777', '666' ]
+774 silly gunzTarPerm extractEntry package.json
+775 silly gunzTarPerm extractEntry README.md
+776 silly gunzTarPerm extractEntry LICENSE
+777 silly gunzTarPerm extractEntry index.js
+778 silly gunzTarPerm extractEntry db.json
+779 silly gunzTarPerm extractEntry HISTORY.md
+780 verbose write writing to f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\mime-types\node_modules\mime-db\package.json
+781 info preinstall mime-db@1.23.0
+782 verbose readDependencies loading dependencies from f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\mime-types\node_modules\mime-db\package.json
+783 verbose readDependencies loading dependencies from f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\mime-types\node_modules\mime-db\package.json
+784 silly install resolved []
+785 verbose about to build f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\mime-types\node_modules\mime-db
+786 info build f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\mime-types\node_modules\mime-db
+787 info linkStuff mime-db@1.23.0
+788 silly linkStuff mime-db@1.23.0 has f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\mime-types\node_modules as its parent node_modules
+789 verbose linkBins mime-db@1.23.0
+790 verbose linkMans mime-db@1.23.0
+791 verbose rebuildBundles mime-db@1.23.0
+792 info install mime-db@1.23.0
+793 info postinstall mime-db@1.23.0
+794 verbose unlock done using C:\Users\Magic-Y\AppData\Roaming\npm-cache\_locks\mime-db-7680f742182cd1ab.lock for f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\mime-types\node_modules\mime-db
+795 verbose about to build f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\mime-types
+796 info build f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\mime-types
+797 info linkStuff mime-types@2.1.11
+798 silly linkStuff mime-types@2.1.11 has f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules as its parent node_modules
+799 verbose linkBins mime-types@2.1.11
+800 verbose linkMans mime-types@2.1.11
+801 verbose rebuildBundles mime-types@2.1.11
+802 verbose rebuildBundles [ 'mime-db' ]
+803 info install mime-types@2.1.11
+804 info postinstall mime-types@2.1.11
+805 verbose unlock done using C:\Users\Magic-Y\AppData\Roaming\npm-cache\_locks\mime-types-0b66827c88a94403.lock for f:\Movie\node_modules\connect-multiparty\node_modules\type-is\node_modules\mime-types
+806 verbose about to build f:\Movie\node_modules\connect-multiparty\node_modules\type-is
+807 info build f:\Movie\node_modules\connect-multiparty\node_modules\type-is
+808 info linkStuff type-is@1.6.12
+809 silly linkStuff type-is@1.6.12 has f:\Movie\node_modules\connect-multiparty\node_modules as its parent node_modules
+810 verbose linkBins type-is@1.6.12
+811 verbose linkMans type-is@1.6.12
+812 verbose rebuildBundles type-is@1.6.12
+813 verbose rebuildBundles [ 'media-typer', 'mime-types' ]
+814 info install type-is@1.6.12
+815 info postinstall type-is@1.6.12
+816 verbose unlock done using C:\Users\Magic-Y\AppData\Roaming\npm-cache\_locks\type-is-5f86a333c33f5063.lock for f:\Movie\node_modules\connect-multiparty\node_modules\type-is
+817 verbose about to build f:\Movie\node_modules\connect-multiparty
+818 info build f:\Movie\node_modules\connect-multiparty
+819 info linkStuff connect-multiparty@2.0.0
+820 silly linkStuff connect-multiparty@2.0.0 has f:\Movie\node_modules as its parent node_modules
+821 verbose linkBins connect-multiparty@2.0.0
+822 verbose linkMans connect-multiparty@2.0.0
+823 verbose rebuildBundles connect-multiparty@2.0.0
+824 verbose rebuildBundles [ 'multiparty', 'on-finished', 'qs', 'type-is' ]
+825 info install connect-multiparty@2.0.0
+826 info postinstall connect-multiparty@2.0.0
+827 verbose unlock done using C:\Users\Magic-Y\AppData\Roaming\npm-cache\_locks\connect-multiparty-1eb5c89b1b6f21ec.lock for f:\Movie\node_modules\connect-multiparty
+828 verbose validateInstall loading f:\Movie\package.json for validation
+829 verbose stack Error: read ECONNRESET
+829 verbose stack     at exports._errnoException (util.js:870:11)
+829 verbose stack     at TLSWrap.onread (net.js:544:26)
+830 verbose cwd f:\Movie
+831 error Windows_NT 10.0.10586
+832 error argv "E:\\Program Files\\nodejs\\node.exe" "E:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "connect-multiparty" "--save"
+833 error node v4.2.4
+834 error npm  v2.14.12
+835 error code ECONNRESET
+836 error errno ECONNRESET
+837 error syscall read
+838 error network read ECONNRESET
+838 error network This is most likely not a problem with npm itself
+838 error network and is related to network connectivity.
+838 error network In most cases you are behind a proxy or have bad network settings.
+838 error network
+838 error network If you are behind a proxy, please make sure that the
+838 error network 'proxy' config is set properly.  See: 'npm help config'
+839 verbose exit [ 1, true ]

@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var session = require('express-session');
 var mongoStore = require('connect-mongo')(session);
+var multiparty = require('connect-multiparty')();
 
 //数据库URL
 var dbUrl = 'mongodb://127.0.0.1/imooc';
@@ -27,7 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));   // 改为 true
 app.use(cookieParser());
-app.use(express.multipart());
+app.use(multiparty);
 app.use(session({
   secret : 'test',
   resave: false,
