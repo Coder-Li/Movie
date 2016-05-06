@@ -2,9 +2,14 @@ var Movie = require('../models/movie');
 var Category = require('../models/category');
 var Comment = require('../models/comment');
 var _ = require('underscore');
+var fs = require('fs');
+var path = require('path');
 // detail page
 exports.detail = function (req, res) {
     var id = req.params.id;
+        Movie.update({_id: id}, {$inc: {pv: 1}}, function (err) {
+            console.log(err);
+        })
 
     Movie.findById(id, function (err, movie) {
         Comment
@@ -50,10 +55,6 @@ exports.update = function (req, res) {
 
 // admin post movie
 exports.save = function (req, res) {
-    console.log(req.body.movie);
-    console.log(req.body.movie.category);
-    // console.log(typeof req.body.movie);
-    // console.log('title:' + req.body.movie.title);
     var id;
     var flag = typeof req.body.movie._id;
     if (flag === 'undefined') {
@@ -63,7 +64,10 @@ exports.save = function (req, res) {
     }
     var movieObj = req.body.movie;
     var _movie;
-
+    
+    if(req.poster){
+        movieObj.poster = req.poster;
+    }
 
     if (id) {
         Movie.findById(id, function (err, movie) {
@@ -150,3 +154,27 @@ exports.del = function (req, res) {
         });
     }
 }; 
+
+
+// admin poster
+exports.savePoster = function(req,res,next){
+    var posterData = req.files.uploadPoster;
+    var filePath = posterData.path;
+    var originalFilename = posterData.originalFilename;
+    
+    if(originalFilename){
+        fs.readFile(filePath, function(err,data){
+            var timespamp = Date.now();
+            var type = posterData.type.split('/')[1];
+            var poster = timespamp + '.' + type;
+            var newPath = path.join(__dirname, '../../', '/public/upload/' + poster);
+            
+            fs.writeFile(newPath, data, function (err) {
+                req.poster = poster;
+                next();
+            })
+        })
+    }else{
+        next();
+    }
+}
